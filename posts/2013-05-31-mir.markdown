@@ -1,0 +1,19 @@
+---
+title: Music Visualization
+---
+
+Very long ago, I implemented the [cocktail party problem](https://en.wikipedia.org/wiki/Cocktail_party_effect) with PCA for a Multivariate Analysis assignment. Even though my teacher thought PCA should be used for dimension reduction and gave me a very low score, I am amazed about how music can be played as data.
+
+Later I learned how MP3 compresses songs and got some basic knowledge about NLP. I never stopped dreaming about interpreting music with machine ever since. Or more specifically, I'd like my computer to write guitar pro tabs for me or remove one of the instruments so that I can stub in as any member in a band.
+
+Recently I finally decide to read some papers on this subject and found out it is called [Music information retrieval](https://en.wikipedia.org/wiki/Music_information_retrieval) (MIR) and people are making money with it.
+
+Sound is characterized by pitch, loudness and timbre. And my dream program must be able to split the sound by instrument and classify them by timbre.  [De Poli and Prandoni][1] used a 6 MFCC coefficients vector as input to a Kohonen self-organizing map (SOM) in order to
+build timbre spaces. [Agostini et al.][2] employed only spectral characteristics of 1007 notes from 27 musical instruments classified with support vector machines and quadratic discriminate analysis. The most relevant features were to be the in harmonicity, the spectral centroid, and the energy contained in the first partial. 
+
+Some researchers use this kind of features to classify single notes with classifiers like $k$-NN or GMM. Some of the results are very recent. However, this is quite far from what I am expecting. First of all, I want it to be unsupervised. Vocals and instruments (especially electric ones) can differ very much. I would like to separate them rather than label them. 
+
+[1]: http://infoscience.epfl.ch/record/33874/files/DePoliP97.pdf "De Poli, G., Prandoni, P.: Sonological models for timbre characterization. Journal of New Music Research 26, 170–197 (1997)"
+[2]: http://asp.eurasipjournals.com/content/pdf/1687-6180-2003-943279.pdf "Agostini, G., Longari, M., Pollastri, E.: Musical instrument timbres classification with spectral features. EURASIP Journal on Applied Signal Processing, 5–14 (2003)"
+
+

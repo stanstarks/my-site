@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>My Hakyll Blog - Programming Notes</title>
+        <link rel="stylesheet" type="text/css" href="./css/syntax.css" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <a href="./">My Hakyll Blog</a>
+            </div>
+            <div id="navigation">
+                <a href="./">Home</a>
+				<a href="./cv.html">CV</a>
+                <a href="./archive.html">Archive</a>
+				<a href="./etcetera.html">ETC</a>
+            </div>
+        </div>
+
+        <div id="content">
+            <h1>Programming Notes</h1>
+
+            <h1 id="introduction">Introduction</h1>
+<p>
+This manual contains reference information about practical programming problems I met since just first getting into coding. The manual is divided into the following sections:
+</p>
+<ul>
+<li>
+<a href="http://www.ee.ic.ac.uk/hp/staff/dmb/matrix/index.html">Main Index</a>: Alphabetical index of all entries.
+</li>
+<li>
+<a href="http://www.ee.ic.ac.uk/hp/staff/dmb/matrix/property.html">Java Traps</a> : Problems I met while programming in Java.
+</li>
+<li>
+<a href="http://www.ee.ic.ac.uk/hp/staff/dmb/matrix/property.html">Matlab Quick Reference</a> : Functions and snippets I find useful.
+</li>
+<li>
+<a href="http://www.ee.ic.ac.uk/hp/staff/dmb/matrix/property.html">Haskell Quick Reference</a> : Functions and snippets I find useful.
+</li>
+<li>
+<a href="http://www.ee.ic.ac.uk/hp/staff/dmb/matrix/gfl.html">GNU Free Documentation License</a>
+</li>
+</ul>
+
+<h1 id="c-quick-reference">C++ Quick Reference</h1>
+<h2 id="pointer-syntax">Pointer Syntax</h2>
+<pre><code>int *p; // Defines pointer.
+p = &amp;q; // Sets p to address of q.
+v = *p; // Set v to value of q.
+Foo *f = new Foo(); // Initializes f.
+int k = f-&gt;x; // Sets k equal to the value of f's member variable.</code></pre>
+<h2 id="c-class-syntax">C++ Class Syntax</h2>
+<pre><code>class MyClass {
+    private:
+        double var;
+    public:
+        MyClass(double v) {var = v; }
+};
+double Complex::Update(double v) {
+    var = v; return v;
+}</code></pre>
+<h2 id="c-vs-java">C++ vs Java</h2>
+<ol style="list-style-type: decimal">
+<li>Java runs in a virtual machine.</li>
+<li>C++ natively supports unsigned arithmetic.</li>
+<li>In java, parameters are always passed by value (or, with objects, their references are passed by value). In C++, parameters can be passed by value, pointer, or by reference.</li>
+<li>Java has built-in garbage collection.</li>
+<li>C++ allows operator overloading.</li>
+<li>C++ allows multiple inheritance of classes.</li>
+</ol>
+<h1 id="java-quick-reference">Java Quick Reference</h1>
+<h2 id="classes-interfaces">Classes &amp; Interfaces</h2>
+<pre><code>public static foid main(String args[]) {...}
+interface Foo {
+    void abc();
+}
+class Foo extends Bar implements Foo {...}</code></pre>
+<h2 id="final">final:</h2>
+<ol style="list-style-type: decimal">
+<li>Class: Can not be sub-classed.</li>
+<li>Method: Can not be overridden.</li>
+<li>Variable: Can not be changed.</li>
+</ol>
+<h2 id="static">static:</h2>
+<ol style="list-style-type: decimal">
+<li>Method: Class method. Called with Foo.Dolt()</li>
+<li>Variable: Class variable. Has only one copy and is accessed through the calss name.</li>
+</ol>
+<h2 id="abstract">abstract:</h2>
+<ol style="list-style-type: decimal">
+<li>Class: Contains abstract methods. Can not be instantiated.</li>
+<li>Interface: All interfaces are implicitly abstract. This modifier is optional.</li>
+<li>Method: Method without a body. Class must also be abstract.</li>
+</ol>
+<h1 id="java-snippets">Java Snippets</h1>
+<h2 id="arrays-and-strings">Arrays and Strings</h2>
+<h3 id="hash-tables">Hash Tables</h3>
+<pre><code>public HashMap&lt;Integer, Student&gt; buildMap(Student[] students) {
+	HashMap&lt;Interger, Student&gt; map = new HashMap&lt;Integer, Student&gt;();
+	for (Student s : students) map.put(s.getId(), s);
+	return map;
+}</code></pre>
+<h3 id="stringbufferstringbuilder">StringBuffer/StringBuilder</h3>
+<pre><code>public String makeSentence(String[] words) {
+	StringBuffer sentence = new StringBuffer();
+	for (String w : words) sentence.append(w);
+	return sentence.toString();
+}</code></pre>
+<h3 id="issubstring">isSubString</h3>
+<p>An easy way of implementing isSubstring which checks if one word is a substring of another.</p>
+<pre><code>public static boolean isSubstring(String big, String small) {
+	if (big.indexOf(small) &gt;= 0) {
+		return true;
+	} else {
+		return false;
+	}
+}</code></pre>
+<h2 id="linked-lists">Linked Lists</h2>
+<h3 id="creating-a-linked-list">Creating a Linked List</h3>
+<pre><code>class Node {
+    Node next = null;
+    int data;
+    public Node(int d) {data = d; }
+    void appendToTail(int d) {
+        Node end = new Node(d);
+        Node n = this;
+        while (n.next != null) { n = n.next; }
+        n.next = end;
+    }
+}</code></pre>
+<h3 id="deleting-a-node-from-a-singly-linked-list">Deleting a Node from a Singly Linked List:</h3>
+<pre><code>Node deleteNode(Node head, int d) {
+    Node n = head;
+    if (n.data == d) {
+        return head.next; /* moved head */
+    }
+    while (n.next != null) {
+        if (n.next.data == d) {
+            n.next = n.next.next;
+            return head; /* head didn't change */
+        }
+        n = n.next;
+    }
+}</code></pre>
+<h3 id="get-the-length-of-a-linked-list">Get the length of a Linked List</h3>
+<pre><code>private static int length(LinkedListNode l) {
+	if (l == null) {
+		return 0;
+	} else {
+		return 1 + length(l.next);
+	}
+}</code></pre>
+<h2 id="stacks-and-queues">Stacks and Queues</h2>
+<h3 id="implementing-a-stack">Implementing a Stack</h3>
+<pre><code>class Stack {
+    Node top;
+    Node pop() {
+        if (top != null) {
+            Object item = top.data;
+            top = top.next;
+            return item;
+        }
+        return null;
+    }
+    void push(Object item) {
+        Node t = new Node(item);
+        t.next = top;
+        top = t;
+    }
+}</code></pre>
+<h3 id="implementing-a-queue">Implementing a Queue</h3>
+<pre><code>class Queue {
+    Node first, last;
+    void enqueue(Object item) {
+        if (!first) {
+            back = new Node(item);
+            first = back;
+        } else {
+            back.next = new Node(item);
+            back = back.next;
+        }
+    }
+    Node dequeue(Node n) {
+        if (front != null) {
+            Object item = front.data;
+            front = front.next;
+            return item;
+        }
+        return null;
+    }
+}</code></pre>
+<h1 id="java-traps">Java Traps</h1>
+<h3>
+Type Erasure
+</h3>
+<p>
+I once tried to put these two methods in the same class:
+<pre><code>class Test{
+   void add(Set&lt;Integer&gt; ii){}
+   void add(Set&lt;String&gt; ss){}
+}
+</code></pre>
+</p>
+
+<h1 id="clojure-snippets">Clojure Snippets</h1>
+<h3 id="counting-neighbours">Counting Neighbours</h3>
+<pre><code>(defn neighbours
+	[[x y]]
+	(for [dx [-1 0 1] dy [-1 0 1] :when (not= 0 dx dy)]
+		[(+ dx x) (+ dy y]))
+
+(defn count-neighbours
+	[board loc]
+	(count (filter #(get-in board %) (neighbour loc))))</code></pre>
+<h1 id="matlab-quick-reference">Matlab Quick Reference</h1>
+<h3>
+Functions
+</h3>
+<h4>
+Full: convert sparse matrix to full matrix
+</h4>
+<p>
+<code>A = full(S)</code> converts a sparse matrix <code>S</code> to full storage organization. If <code>S</code> is a full matrix, it is left unchanged. If <code>A</code> is full, <code>issparse(A)</code> is <code>0</code>.
+</p>
+<p>
+<code>B = sparse(10000,10000,pi)</code> sets up a 10000-by-10000 matrix with only one nonzero element. Trying <code>full(B)</code> requires 800 megabytes of storage.
+</p>
+<h4>
+Find nonzero indices
+</h4>
+<p>
+<code>ind = find(X)</code> locates all nonzero elements of array <code>X</code>, and returns the linear indices of those elements in vector <code>ind</code>.
+</p>
+<h4>
+Size: array dimensions
+</h4>
+<p>
+<code>m = size(X,dim)</code> returns the size of the dimension of <code>X</code> specified by scalar <code>dim</code>.
+</p>
+<p> 
+For a Java array, <code>size</code> returns the length of the Java array as the number of rows. The number of columns is always 1. For a Java array of arrays, the result describes only the top level array.
+</p>
+<h4>
+Sum of array elements
+</h4>
+<p>
+<code>B = sum(A,dim)</code> sums along the dimension of <code>A</code> specified by scalar <code>dim</code>. The <code>dim</code> input is an integer value from <code>1</code> to <code>N</code>, where <code>N</code> is the number of dimensions in <code>A</code>. Set <code>dim</code> to <code>1</code> to compute the sum of each column, <code>2</code> to sum rows, etc.
+</p>
+
+<h3>
+Snippets
+</h3>
+<h4>
+Select papers written by certain authors with a map
+</h4>
+<p>
+<code>apapers</code> is a cell array of papers written by each author. The goal is to select the author-paper map of which the author indices are in <code>alist</code>. Using <code>sum</code> and <code>find</code>, we can easily locate the nonzero elements and select these colums with a list assignment.
+<pre><code>
+numa = length(alist);            % number of authors
+totp = length(ptitles);          % total number of papers
+
+apmap = zeros(numa,totp);
+for aa = 1:numa
+  apmap(aa,apapers{alist(aa)}) = 1;
+end
+plist = find(sum(apmap,1));      % indices of papers
+apmap = apmap(:,plist);          % entry (i,j)=1 if author i wrote paper j
+</code></pre>
+</p>
+
+<h4>
+Pick informative words
+</h4>
+<p>
+Estimate informativeness by first do tf-idf, then compute entropy. <code>wpcounts</code> is the counts of words in papers, <code>pcounts</code> is the lengths of papers given by <code>pcounts = full(sum(wpcounts,1))</code>.
+<pre><code>
+ww = wpcounts ./ log(1+pcounts(ones(size(wpcounts,1),1),:));
+np = length(plist);
+h = zeros(1,1000);
+for i=1:1000
+  pi = 10/np + ww(i,:);
+  pi = pi / sum(pi);
+  h(i) = -sum(pi.*log(pi));
+end
+[a i] = sort(h);
+wlist = i(1:numw);              % indices of numw most informative words
+</code></pre>
+</p>
+
+</html>
+
+
+        </div>
+        <div id="footer">
+            Site proudly generated by
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </div>
+    </body>
+</html>

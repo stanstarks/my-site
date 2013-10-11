@@ -1,0 +1,2614 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Topic modeling bibliography</title>
+<script type="text/javascript" src="npb_bib_files/jquery.js"></script><script type="text/javascript">
+$(document).ready(function() {
+  $(".abstract-button").click(function(event) {
+    $(this).parent().parent().find("p.abstract").toggle();
+  });
+  $(".bibtex-button").click(function(event) {
+    $(this).parent().parent().find("pre").toggle();
+  });
+  $(".clickable").click(function(event) {
+    $("#nowshowing").text(event.target.innerText);
+    $("div.showall").show();
+    $("div.entry").hide();
+    $("div.entry").filter(":contains('" + event.target.innerText + "')").show();
+  });
+  $("div.showall").click(function(event) { $("div.showall").hide(); $("div.entry").show(); });
+});
+</script><style>
+body {
+  font-family: Geneva, Tahoma, sans-serif;
+}
+div.entries {
+  margin-left: 12%;
+  margin-right: 16%;
+}
+div.entry {
+  margin-top: 20px;
+  padding-left: 30px;
+  text-indent: -20px;
+  padding-bottom: 10px;
+  border-bottom: solid #cccccc 1px;
+}
+div.entry-tags {
+  text-align: right;
+  width: 100%;
+  font-size: small;
+}
+div.entry-tags span.keyword {
+  margin-left: 5px;
+}
+div.show-hide {
+  text-align: right;
+  width: 100%;
+  font-size: small;
+}
+div.keywords {
+  float: right;
+}
+div.keywords div.keyword {
+  background-color: #ffcccc;
+  margin: 5px; padding: 3px;
+}
+div.showall {
+  display: none; font-weight: bold; background-color: #777777; color: #eeeeee;
+  margin: 5px; padding: 3px; width: 100%; text-align: center;
+}
+.clickable:hover { color: #0000FF; }
+.abstract-button {
+}
+span.abstract-button:hover { color: #0000FF; }
+p.abstract {
+  text-indent: 0px;
+  background-color: #ccccff;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding: 10px;
+  display: none;
+}
+p.note {
+  text-indent: 0px;
+  font-style: italic;
+  font-size: small;
+  margin-left: 30%;
+}
+span.bibtex-button { }
+span.bibtex-button:hover { color: #0000FF; }
+pre {
+  text-indent: 0px;
+  background-color: #ccffcc;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding: 10px;
+  display: none;
+}
+div.clearing { clear: both; }
+</style>
+</head>
+<body>
+<h1>Topic Modeling Bibliography</h1>
+<div class="keywords">
+<div class="keyword clickable">Bibliometrics</div>
+<div class="keyword clickable">Cross-language</div>
+<div class="keyword clickable">Evaluation</div>
+<div class="keyword clickable">Implementations</div>
+<div class="keyword clickable">Inference</div>
+<div class="keyword clickable">NLP</div>
+<div class="keyword clickable">Networks</div>
+<div class="keyword clickable">Non-parametric</div>
+<div class="keyword clickable">Scalability</div>
+<div class="keyword clickable">Temporal</div>
+<div class="keyword clickable">Theory</div>
+<div class="keyword clickable">User interface</div>
+<div class="keyword clickable">Vision</div>
+<div class="keyword clickable">Where to start</div>
+</div>
+<div class="entries">
+<div class="showall">Show All (showing <span id="nowshowing"></span>)</div>
+<div class="entry">
+<a name="airoldi2008mixed"></a>
+    <div class="metadata">
+<span class="clickable">Edoardo M. Airoldi</span>, <span class="clickable">David M. Blei</span>, <span class="clickable">Stephen E. Fienberg</span>, <span class="clickable">Eric P. Xing</span>.
+Mixed Membership Stochastic Blockmodels. 
+<span class="clickable">JMLR</span> (9) <span class="clickable">2008</span> pp. 1981-2014.
+</div>
+<div class="entry-tags"><span class="keyword clickable">Networks</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@article{airoldi2008mixed,
+  author={Edoardo M. Airoldi and David M. Blei and Stephen E. Fienberg and Eric P. Xing},
+  title={Mixed Membership Stochastic Blockmodels},
+  journal={JMLR},
+  year={2008},
+  volume={9},
+  pages={1981-2014},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="alsumait2009topic"></a>
+    <div class="metadata">
+<span class="clickable">Loulwah AlSumait</span>, <span class="clickable">Daniel Barbará</span>, <span class="clickable">James Gentle</span>, <span class="clickable">Carlotta Domeniconi</span>.
+<a href="http://www.springerlink.com/content/v3jth868647716kg/">Topic Significance Ranking of LDA Generative Models</a>.
+<span class="clickable">ECML</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Evaluation</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{alsumait2009topic,
+  author={Loulwah AlSumait and Daniel Barbará and James Gentle and Carlotta Domeniconi},
+  title={Topic Significance Ranking of LDA Generative Models},
+  booktitle={ECML},
+  year={2009},
+  url={http://www.springerlink.com/content/v3jth868647716kg/},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="andrzejewski2007statistical"></a>
+    <div class="metadata">
+<span class="clickable">David Andrzejewski</span>, <span class="clickable">Anne Mulhern</span>, <span class="clickable">Ben Liblit</span>, <span class="clickable">Xiaojin Zhu</span>.
+Statistical Debugging using Latent Topic Models.
+<span class="clickable">ECML</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{andrzejewski2007statistical,
+  author={David Andrzejewski and Anne Mulhern and Ben Liblit and Xiaojin Zhu},
+  title={Statistical Debugging using Latent Topic Models},
+  booktitle={ECML},
+  year={2007},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="andrzejewski2009incorporating"></a>
+    <div class="metadata">
+<span class="clickable">David Andrzejewski</span>, <span class="clickable">Xiaojin Zhu</span>, <span class="clickable">Mark Craven</span>.
+Incorporating domain knowledge into topic modeling via Dirichlet Forest priors.
+<span class="clickable">ICML</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{andrzejewski2009incorporating,
+  author={David Andrzejewski and Xiaojin Zhu and Mark Craven},
+  title={Incorporating domain knowledge into topic modeling via Dirichlet Forest priors},
+  booktitle={ICML},
+  year={2009},
+  pages={25-32},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="andrzejewski2011framework"></a>
+    <div class="metadata">
+<span class="clickable">David Andrzejewski</span>, <span class="clickable">Xiaojin Zhu</span>, <span class="clickable">Mark Craven</span>, <span class="clickable">Ben Recht</span>.
+A Framework for Incorporating General Domain Knowledge into Latent Dirichlet Allocation using First-Order Logic.
+<span class="clickable">IJCAI</span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{andrzejewski2011framework,
+  author={David Andrzejewski and Xiaojin Zhu and Mark Craven and Ben Recht},
+  title={A Framework for Incorporating General Domain Knowledge into Latent Dirichlet Allocation using First-Order Logic},
+  booktitle={IJCAI},
+  year={2011},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="asuncion2008distributed"></a>
+    <div class="metadata">
+<span class="clickable">Arthur Asuncion</span>, <span class="clickable">Padhraic Smyth</span>, <span class="clickable">Max Welling</span>.
+<a href="http://www.ics.uci.edu/%7Easuncion/pubs/NIPS_08.pdf">Asynchronous Distributed Learning of Topic Models</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2008</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Scalability</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{asuncion2008distributed,
+  author={Arthur Asuncion and Padhraic Smyth and Max Welling},
+  title={Asynchronous Distributed Learning of Topic Models},
+  booktitle={NIPS},
+  year={2008},
+  pages={81-88},
+  url={http://www.ics.uci.edu/~asuncion/pubs/NIPS_08.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="asuncion2009smoothing"></a>
+    <div class="metadata">
+<span class="clickable">Arthur Asuncion</span>, <span class="clickable">Max Welling</span>, <span class="clickable">Padhraic Smyth</span>, <span class="clickable">Yee-Whye Teh</span>.
+<a href="http://www.ics.uci.edu/%7Easuncion/pubs/UAI_09.pdf">On Smoothing and Inference for Topic Models</a>.
+<span class="clickable">UAI</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Inference</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{asuncion2009smoothing,
+  author={Arthur Asuncion and Max Welling and Padhraic Smyth and Yee-Whye Teh},
+  title={On Smoothing and Inference for Topic Models},
+  booktitle={UAI},
+  year={2009},
+  url={http://www.ics.uci.edu/~asuncion/pubs/UAI_09.pdf},
+}
+</pre>
+  <p class="note">A dense but excellent review of inference in topic 
+models. Introduces CVB0, a method for collapsed variational inference 
+surprisingly similar to Gibbs sampling.</p>
+</div>
+<div class="entry">
+<a name="blei2003modeling"></a>
+    <div class="metadata">
+<span class="clickable">David Blei</span>, <span class="clickable">Michael Jordan</span>.
+Modeling Annotated Data.
+<span class="clickable">SIGIR</span> (<span class="clickable">2003</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{blei2003modeling,
+  author={David Blei and Michael Jordan},
+  title={Modeling Annotated Data},
+  booktitle={SIGIR},
+  year={2003},
+}
+</pre>
+  <p class="note">This paper introduces CorrLDA for data that consists 
+of text and images, where image "topics" are chosen only from topics 
+that are assigned to the text in the same document.</p>
+</div>
+<div class="entry">
+<a name="blei-lda-c"></a>
+    <div class="metadata">
+<span class="clickable">David M. Blei</span>.
+<a href="http://www.cs.princeton.edu/%7Eblei/lda-c/">lda-c</a>. 
+(<span class="clickable">2003</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Implementations</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{blei-lda-c,
+  author={David M. Blei},
+  title={lda-c},
+  year={2003},
+  url={http://www.cs.princeton.edu/~blei/lda-c/},
+}
+</pre>
+  <p class="note">lda-c implements LDA with variational inference in C.</p>
+</div>
+<div class="entry">
+<a name="blei2003latent"></a>
+    <div class="metadata">
+<span class="clickable">David M. Blei</span>, <span class="clickable">Andrew Ng</span>, <span class="clickable">Michael Jordan</span>.
+Latent Dirichlet allocation. 
+<span class="clickable">JMLR</span> (3) <span class="clickable">2003</span> pp. 993-1022.
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@article{blei2003latent,
+  author={David M. Blei and Andrew Ng and Michael Jordan},
+  title={Latent Dirichlet allocation},
+  journal={JMLR},
+  year={2003},
+  volume={3},
+  pages={993-1022},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="blei2003hierarchical"></a>
+    <div class="metadata">
+<span class="clickable">David M. Blei</span>, <span class="clickable">Thomas Griffiths</span>, <span class="clickable">Michael Jordan</span>, <span class="clickable">Joshua Tenenbaum</span>.
+<a href="http://books.nips.cc/papers/files/nips16/NIPS2003_AA03.pdf">Hierarchical topic models and the nested Chinese restaurant process</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2003</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Non-parametric</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{blei2003hierarchical,
+  author={David M. Blei and Thomas Griffiths and Michael Jordan and Joshua Tenenbaum},
+  title={Hierarchical topic models and the nested Chinese restaurant process},
+  booktitle={NIPS},
+  year={2003},
+  url={http://books.nips.cc/papers/files/nips16/NIPS2003_AA03.pdf},
+}
+</pre>
+  <p class="note">Introduces hLDA, which models topics in a tree. Each document is generated by topics along a single path through the tree.</p>
+</div>
+<div class="entry">
+<a name="blei2007nested"></a>
+    <div class="metadata">
+<span class="clickable">David M. Blei</span>, <span class="clickable">Thomas L. Griffiths</span>, <span class="clickable">Michael I. Jordan</span>.
+<a href="http://arxiv.org/abs/0710.0845">The nested Chinese restaurant process and hierarchical topic models</a>. 
+(<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Non-parametric</span></div>
+  <div class="show-hide">
+<span class="bibtex-button">[BibTeX]</span><span class="abstract-button">[Abstract]</span>
+</div>
+    <pre>@misc{blei2007nested,
+  author={David M. Blei and Thomas L. Griffiths and Michael I. Jordan},
+  title={The nested Chinese restaurant process and hierarchical topic models},
+  year={2007},
+  url={http://arxiv.org/abs/0710.0845},
+}
+</pre>
+  <p class="abstract">We present the nested Chinese restaurant process 
+(nCRP), a stochastic process which assigns probability distributions to 
+infinitely-deep, infinitely-branching trees. We show how this stochastic
+ process can be used as a prior distribution in a nonparametric Bayesian
+ model of document collections. Specifically, we present an application 
+to information retrieval in which documents are modeled as paths down a 
+random tree, and the preferential attachment dynamics of the nCRP leads 
+to clustering of documents according to sharing of topics at multiple 
+levels of abstraction. Given a corpus of documents, a posterior 
+inference algorithm finds an approximation to a posterior distribution 
+over trees, topics and allocations of words to levels of the tree. We 
+demonstrate this algorithm on several collections of scientific 
+abstracts. This model exemplifies a recent trend in statistical machine 
+learning-the use of nonparametric Bayesian methods to infer 
+distributions on flexible data structures.</p>
+<p class="note">This is a longer version of <a href="#blei2004hierarchical">Blei et al. 2004</a>, which extends that paper's hLDA model to trees of unlimited depth.</p>
+</div>
+<div class="entry">
+<a name="blei2006dynamic"></a>
+    <div class="metadata">
+<span class="clickable">David M. Blei</span>, <span class="clickable">John D. Lafferty</span>.
+<a href="http://portal.acm.org/citation.cfm?id=1143859">Dynamic Topic Models</a>.
+<span class="clickable">ICML</span> (<span class="clickable">2006</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Temporal</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{blei2006dynamic,
+  author={David M. Blei and John D. Lafferty},
+  title={Dynamic Topic Models},
+  booktitle={ICML},
+  year={2006},
+  url={http://portal.acm.org/citation.cfm?id=1143859},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="blei2007correlated"></a>
+    <div class="metadata">
+<span class="clickable">David M. Blei</span>, <span class="clickable">John D. Lafferty</span>.
+A Correlated Topic model of Science. 
+<span class="clickable">AAS</span> (1) <span class="clickable">2007</span> pp. 17-35.
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@article{blei2007correlated,
+  author={David M. Blei and John D. Lafferty},
+  title={A Correlated Topic model of Science},
+  journal={AAS},
+  year={2007},
+  volume={1},
+  number={1},
+  pages={17-35},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="blei2007supervised"></a>
+    <div class="metadata">
+<span class="clickable">David M. Blei</span>, <span class="clickable">Jon D. McAuliffe</span>.
+<a href="http://books.nips.cc/papers/files/nips20/NIPS2007_0893.pdf">Supervised Topic Models</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{blei2007supervised,
+  author={David M. Blei and Jon D. McAuliffe},
+  title={Supervised Topic Models},
+  booktitle={NIPS},
+  year={2007},
+  url={http://books.nips.cc/papers/files/nips20/NIPS2007_0893.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="blei2011introduction"></a>
+    <div class="metadata">
+<span class="clickable">David M. Blei</span>.
+<a href="http://www.cs.princeton.edu/%7Eblei/papers/Blei2011.pdf">Introduction to Probabilistic Topic Models</a>. 
+<span class="clickable">Communications of the ACM</span> () <span class="clickable">2011</span> pp. .
+</div>
+<div class="entry-tags"><span class="keyword clickable">Where to start</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@article{blei2011introduction,
+  author={David M. Blei},
+  title={Introduction to Probabilistic Topic Models},
+  journal={Communications of the ACM},
+  year={2011},
+  url={http://www.cs.princeton.edu/~blei/papers/Blei2011.pdf},
+}
+</pre>
+  <p class="note">A high-level overview of probabilistic topic models.</p>
+</div>
+<div class="entry">
+<a name="block2011cvhdp"></a>
+    <div class="metadata">
+<span class="clickable">Brad Block</span>.
+<a href="http://www.bradblock.com/tm-0.1.tar.gz">Collapsed variational HDP</a>. 
+(<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Implementations</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{block2011cvhdp,
+  author={Brad Block},
+  title={Collapsed variational HDP},
+  year={2011},
+  url={http://www.bradblock.com/tm-0.1.tar.gz},
+}
+</pre>
+  <p class="note">This library contains Java source and class files 
+implementing the Latent Dirichlet Allocation (single-threaded collapsed 
+Gibbs sampling) and Hierarchical Dirichlet Process (multi-threaded 
+collapsed variational inference) topic models.  The models can be 
+accessed through the command-line or through a simple Java API.  Also 
+included is a subset of the 20 Newsgroup dataset and results of 
+experiments done on the dataset to confirm the correct operation and 
+investigate some properties of the topic models.  No third-party 
+scientific libraries are required and all needed special functions are 
+implemented and included.</p>
+</div>
+<div class="entry">
+<a name="boydgraber2007topic"></a>
+    <div class="metadata">
+<span class="clickable">Jordan Boyd-Graber</span>, <span class="clickable">David M. Blei</span>, <span class="clickable">Xiaojin Zhu</span>.
+A Topic Model for Word Sense Disambiguation.
+<span class="clickable">EMNLP</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">NLP</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{boydgraber2007topic,
+  author={Jordan Boyd-Graber and David M. Blei and Xiaojin Zhu},
+  title={A Topic Model for Word Sense Disambiguation},
+  booktitle={EMNLP},
+  year={2007},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="boydgraber2007turning"></a>
+    <div class="metadata">
+<span class="clickable">Jordan Boyd-Graber</span>, <span class="clickable">David M. Blei</span>.
+PUTOP: Turning Predominant Senses into a Topic Model for WSD.
+<span class="clickable">SEMEVAL</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">NLP</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{boydgraber2007turning,
+  author={Jordan Boyd-Graber and David M. Blei},
+  title={PUTOP: Turning Predominant Senses into a Topic Model for WSD},
+  booktitle={SEMEVAL},
+  year={2007},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="boydgraber2008syntactic"></a>
+    <div class="metadata">
+<span class="clickable">Jordan Boyd-Graber</span>, <span class="clickable">David M. Blei</span>.
+<a href="http://books.nips.cc/papers/files/nips21/NIPS2008_0319.pdf">Syntactic Topic Models</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2008</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">NLP</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{boydgraber2008syntactic,
+  author={Jordan Boyd-Graber and David M. Blei},
+  title={Syntactic Topic Models},
+  booktitle={NIPS},
+  year={2008},
+  url={http://books.nips.cc/papers/files/nips21/NIPS2008_0319.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="boydgraber2009multilingual"></a>
+    <div class="metadata">
+<span class="clickable">Jordan Boyd-Graber</span>, <span class="clickable">David M. Blei</span>.
+Multilingual Topic Models for Unaligned Text.
+<span class="clickable">UAI</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Cross-language</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{boydgraber2009multilingual,
+  author={Jordan Boyd-Graber and David M. Blei},
+  title={Multilingual Topic Models for Unaligned Text},
+  booktitle={UAI},
+  year={2009},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="broniatowskimagee2010"></a>
+<div class="metadata">
+<span class="clickable">David A. Broniatowski</span>, <span class="clickable">Christopher L. Magee</span>.
+<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5591237&amp;tag=1">Analysis of Social Dynamics on FDA Panels Using Social Networks Extracted From Meeting Transcripts</a>.
+<span class="clickable">SocCom</span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Networks</span></div>
+<div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+<pre>@inproceedings{broniatowskimagee2010,
+  author={David A. Broniatowski and Christopher L. Magee},
+  title={Analysis of Social Dynamics on FDA Panels Using Social Networks Extracted From Meeting Transcripts},
+  booktitle={SocCom},
+  year={2010},
+  url={http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5591237&amp;tag=1},
+}
+</pre>
+<p class="note">
+Method for analyzing group decision making based on the Author-Topic Model
+</p>
+</div>
+<div class="entry">
+<a name="broniatowskimagee2011"></a>
+<div class="metadata">
+<span class="clickable">David A. Broniatowski</span>, <span class="clickable">Christopher L. Magee</span>.
+<a href="http://www.springerlink.com/content/w655v786lp583660/">Towards A Computational Analysis of Status and Leadership Styles on FDA Panels</a>.
+<span class="clickable">SBP</span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags">
+<span class="keyword clickable">Networks</span><span class="keyword clickable">Temporal</span>
+</div>
+<div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+<pre>@inproceedings{broniatowskimagee2011,
+  author={David A. Broniatowski and Christopher L. Magee},
+  title={Towards A Computational Analysis of Status and Leadership Styles on FDA Panels},
+  booktitle={SBP},
+  year={2011},
+  url={http://www.springerlink.com/content/w655v786lp583660/},
+}
+</pre>
+<p class="note">
+Incorporates temporal information to generate directed graphs based upon topic models
+</p>
+</div>
+<div class="entry">
+<a name="buntine-dca"></a>
+    <div class="metadata">
+<span class="clickable">Wray L. Buntine</span>.
+<a href="http://www.nicta.com.au/people/buntinew/discrete_component_analysis">Discrete Component Analysis</a>. 
+(<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Implementations</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{buntine-dca,
+  author={Wray L. Buntine},
+  title={Discrete Component Analysis},
+  year={2009},
+  url={http://www.nicta.com.au/people/buntinew/discrete_component_analysis},
+}
+</pre>
+  <p class="note">C implementation of LDA and multinomial PCA.</p>
+</div>
+<div class="entry">
+<a name="buntine2005discrete"></a>
+    <div class="metadata">
+<span class="clickable">Wray L. Buntine</span>, <span class="clickable">Aleks Jakulin</span>.
+Discrete Component Analysis.
+<span class="clickable">SLSFS</span> (<span class="clickable">2005</span>).
+</div>
+<div class="entry-tags"></div> 
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{buntine2005discrete,
+  author={Wray L. Buntine and Aleks Jakulin},
+  title={Discrete Component Analysis},
+  booktitle={SLSFS},
+  year={2005},
+  pages={1-33},
+}
+</pre> 
+  </div>
+<div class="entry">
+<a name="buntine2009estimating"></a>
+    <div class="metadata">
+<span class="clickable">Wray L. Buntine</span>.
+<a href="http://www.nicta.com.au/__data/assets/pdf_file/0019/20746/sdca-0202.pdf">Estimating Likelihoods for Topic Models</a>.
+<span class="clickable">Asian Conference on Machine Learning</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Evaluation</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{buntine2009estimating,
+  author={Wray L. Buntine},
+  title={Estimating Likelihoods for Topic Models},
+  booktitle={Asian Conference on Machine Learning},
+  year={2009},
+  url={http://www.nicta.com.au/__data/assets/pdf_file/0019/20746/sdca-0202.pdf},
+}
+</pre>
+  <p class="note">Provides improved versions of some of the methods in <a href="#wallach2009evaluation">Wallach et al. (2009)</a> for calculating held-out probability.</p>
+</div>
+<div class="entry">
+<a name="cai2007nus"></a>
+    <div class="metadata">
+<span class="clickable">Jun Fu Cai</span>, <span class="clickable">Wee Sun Lee</span>, <span class="clickable">Yee Whye Teh</span>.
+NUS-ML: Improving Word Sense Disambiguation Using Topic Features.
+<span class="clickable">SEMEVAL</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">NLP</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{cai2007nus,
+  author={Jun Fu Cai and Wee Sun Lee and Yee Whye Teh},
+  title={NUS-ML: Improving Word Sense Disambiguation Using Topic Features},
+  booktitle={SEMEVAL},
+  year={2007},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="r-lda"></a>
+    <div class="metadata">
+<span class="clickable">Jonathan Chang</span>.
+<a href="http://cran.r-project.org/web/packages/lda/">R package 'lda'</a>. 
+(<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Implementations</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{r-lda,
+  author={Jonathan Chang},
+  title={R package 'lda'},
+  year={2011},
+  url={http://cran.r-project.org/web/packages/lda/},
+}
+</pre>
+  <p class="note">This package implements latent Dirichlet allocation 
+(LDA) and related models. This includes (but is not limited to) sLDA, 
+corrLDA, and the mixed-membership stochastic blockmodel. Inference for 
+all of these models is implemented via a fast collapsed Gibbs sampler 
+writtten in C. Utility functions for reading/writing data typically used
+ in topic models, as well as tools for examining posterior distributions
+ are also included.</p>
+</div>
+<div class="entry">
+<a name="chang2009relational"></a>
+    <div class="metadata">
+<span class="clickable">Jonathan Chang</span>, <span class="clickable">David Blei</span>.
+Relational Topic Models for Document Networks.
+<span class="clickable">AIStats</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Networks</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{chang2009relational,
+  author={Jonathan Chang and David Blei},
+  title={Relational Topic Models for Document Networks},
+  booktitle={AIStats},
+  year={2009},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="chemudugunta2006modeling"></a>
+    <div class="metadata">
+<span class="clickable">Chaitanya Chemudugunta</span>, <span class="clickable">Padhraic Smyth</span>, <span class="clickable">Mark Steyvers</span>.
+<a href="http://www.datalab.uci.edu/papers/special_words_NIPS06.pdf">Modeling General and Speciﬁc Aspects of Documents with a Probabilistic Topic Model</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2006</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{chemudugunta2006modeling,
+  author={Chaitanya Chemudugunta and Padhraic Smyth and Mark Steyvers},
+  title={Modeling General and Speciﬁc Aspects of Documents with a Probabilistic Topic Model},
+  booktitle={NIPS},
+  year={2006},
+  url={http://www.datalab.uci.edu/papers/special_words_NIPS06.pdf},
+}
+</pre>
+  <p class="note">This paper has two interesting extensions to LDA that 
+account for the power-law distribution of word frequencies in real 
+documents. First, a general "background" distribution represents common 
+words. Second, a "special words" model allows each document to have some
+ unique words.</p>
+</div>
+<div class="entry">
+<a name="chen2011sampling"></a>
+    <div class="metadata">
+<span class="clickable">Changyou Chen</span>, <span class="clickable">Lan Du</span>, <span class="clickable">Wray Buntine</span>.
+<a href="http://www.nicta.com.au/pub?doc=4806">Sampling Table Configurations for the Hierarchical Poisson-Dirichlet Process</a>.
+<span class="clickable">ECML-PKDD</span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Non-parametric</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{chen2011sampling,
+  author={Changyou Chen and Lan Du and Wray Buntine},
+  title={Sampling Table Configurations for the Hierarchical Poisson-Dirichlet Process},
+  booktitle={ECML-PKDD},
+  year={2011},
+  url={http://www.nicta.com.au/pub?doc=4806},
+}
+</pre>
+  <p class="note">A simple hierarchical Pitman-Yor LDA sampler that does
+ not record "table" assignments. Perplexity is sometimes far superior to
+ other methods.</p>
+</div>
+<div class="entry">
+<a name="chang2009reading"></a>
+    <div class="metadata">
+<span class="clickable">Jonathan Chang</span>, <span class="clickable">Jordan Boyd-Graber</span>, <span class="clickable">Chong Wang</span>, <span class="clickable">Sean Gerrish</span>, <span class="clickable">David M. Blei</span>.
+<a href="http://books.nips.cc/papers/files/nips22/NIPS2009_0125.pdf">Reading Tea Leaves: How Humans Interpret Topic Models</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Evaluation</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{chang2009reading,
+  author={Jonathan Chang and Jordan Boyd-Graber and Chong Wang and Sean Gerrish and David M. Blei},
+  title={Reading Tea Leaves: How Humans Interpret Topic Models},
+  booktitle={NIPS},
+  year={2009},
+  url={http://books.nips.cc/papers/files/nips22/NIPS2009_0125.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="das2011simultaneous"></a>
+    <div class="metadata">
+<span class="clickable">Pradipto Das</span>, <span class="clickable">Rohini Srihari</span>, <span class="clickable">Yun Fu</span>.
+<a href="http://www.acsu.buffalo.edu/%7Epdas3/research/papers/CIKM/pdasCIKM11.pdf">Simultaneous Joint and Conditional Modeling of Documents Tagged from Two Perspectives</a>.
+<span class="clickable"></span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{das2011simultaneous,
+  author={Pradipto Das and Rohini Srihari and Yun Fu},
+  title={Simultaneous Joint and Conditional Modeling of Documents Tagged from Two Perspectives},
+  booktitle={},
+  year={2011},
+  url={http://www.acsu.buffalo.edu/~pdas3/research/papers/CIKM/pdasCIKM11.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="daume2009markov"></a>
+    <div class="metadata">
+<span class="clickable">Hal Daumé III</span>.
+Markov Random Topic Fields.
+<span class="clickable"></span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{daume2009markov,
+  author={Hal Daumé III},
+  title={Markov Random Topic Fields},
+  booktitle={},
+  year={2009},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="dai2011grouped"></a>
+<div class="metadata">
+<span class="clickable">Andrew M. Dai</span>, <span class="clickable">Amos J. Storkey</span>.
+
+The Grouped Author-Topic Model for Unsupervised Entity Resolution
+.
+<span class="clickable">ICANN</span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"></div>
+<div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+<pre>@inproceedings{dai2011grouped,
+  author={Andrew M. Dai and Amos J. Storkey},
+  title={
+The Grouped Author-Topic Model for Unsupervised Entity Resolution
+},
+  booktitle={ICANN},
+  year={2011},
+}
+</pre>
+</div>
+<div class="entry">
+<a name="deerwester1990indexing"></a>
+    <div class="metadata">
+<span class="clickable">Scott Deerwester</span>, <span class="clickable">Susan T. Dumais</span>, <span class="clickable">George W. Furnas</span>, <span class="clickable">Thomas K. Landauer</span>, <span class="clickable">Richard Harshman</span>.
+Indexing by Latent Semantic Analysis. 
+<span class="clickable">JASIS</span> (41) <span class="clickable">1990</span> pp. 391-407.
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@article{deerwester1990indexing,
+  author={Scott Deerwester and Susan T. Dumais and George W. Furnas and Thomas K. Landauer and Richard Harshman},
+  title={Indexing by Latent Semantic Analysis},
+  journal={JASIS},
+  year={1990},
+  volume={41},
+  number={6},
+  pages={391-407},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="dietz2007unsupervised"></a>
+    <div class="metadata">
+<span class="clickable">Laura Dietz</span>, <span class="clickable">Steffen Bickel</span>, <span class="clickable">Tobias Scheffer</span>.
+Unsupervised prediction of citation influences.
+<span class="clickable">ICML</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags">
+<span class="keyword clickable">Networks</span><span class="keyword clickable">Bibliometrics</span>
+</div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{dietz2007unsupervised,
+  author={Laura Dietz and Steffen Bickel and Tobias Scheffer},
+  title={Unsupervised prediction of citation influences},
+  booktitle={ICML},
+  year={2007},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="ding2008equivalence"></a>
+    <div class="metadata">
+<span class="clickable">Chris Ding</span>, <span class="clickable">Tao Li</span>, <span class="clickable">Wei Peng</span>.
+On the Equivalence between Non-negative Matrix Factorization and Probabilistic Latent Semantic Indexing. 
+<span class="clickable">Computational Statistics and Data Analysis</span> (52) <span class="clickable">2008</span> pp. 3913-3927.
+</div>
+<div class="entry-tags"><span class="keyword clickable">Theory</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@article{ding2008equivalence,
+  author={Chris Ding and Tao Li and Wei Peng},
+  title={On the Equivalence between Non-negative Matrix Factorization and Probabilistic Latent Semantic Indexing},
+  journal={Computational Statistics and Data Analysis},
+  year={2008},
+  volume={52},
+  pages={3913-3927},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="doyle2009accounting"></a>
+    <div class="metadata">
+<span class="clickable">Gabriel Doyle</span>, <span class="clickable">Charles Elkan</span>.
+<a href="http://www.cs.utah.edu/%7Ehal/tmp/icml/papers/162.pdf">Accounting for Burstiness in Topic Models</a>.
+<span class="clickable">ICML</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{doyle2009accounting,
+  author={Gabriel Doyle and Charles Elkan},
+  title={Accounting for Burstiness in Topic Models},
+  booktitle={ICML},
+  year={2009},
+  url={http://www.cs.utah.edu/~hal/tmp/icml/papers/162.pdf},
+}
+</pre>
+  <p class="note">Replaces the standard multinomial distribution over topics with a Dirichlet-compound Multinomial (DCM).</p>
+</div>
+<div class="entry">
+<a name="eisenstein2010latent"></a>
+    <div class="metadata">
+<span class="clickable">Jacob Eisenstein</span>, <span class="clickable">Brendan O'Connor</span>, <span class="clickable">Noah A. Smith</span>, <span class="clickable">Eric P. Xing</span>.
+<a href="http://www.cc.gatech.edu/%7Ejeisenst/papers/emnlp2010.pdf">A Latent Variable Model for Geographic Lexical Variation</a>.
+<span class="clickable">EMNLP</span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{eisenstein2010latent,
+  author={Jacob Eisenstein and Brendan O'Connor and Noah A. Smith and Eric P. Xing},
+  title={A Latent Variable Model for Geographic Lexical Variation},
+  booktitle={EMNLP},
+  year={2010},
+  url={http://www.cc.gatech.edu/~jeisenst/papers/emnlp2010.pdf},
+}
+</pre>
+  <p class="note">The widely-reported Twitter dialects paper. Topics 
+combine a word distribution with a bivariate normal over latitude and 
+longitude.</p>
+</div>
+<div class="entry">
+<a name="eisenstein2011sparse"></a>
+    <div class="metadata">
+<span class="clickable">Jacob Eisenstein</span>, <span class="clickable">Amr Ahmed</span>, <span class="clickable">Eric P. Xing</span>.
+<a href="http://www.cc.gatech.edu/%7Ejeisenst/papers/icml2011.pdf">Sparse Additive Generative Models of Text</a>.
+<span class="clickable">ICML</span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{eisenstein2011sparse,
+  author={Jacob Eisenstein and Amr Ahmed and Eric P. Xing},
+  title={Sparse Additive Generative Models of Text},
+  booktitle={ICML},
+  year={2011},
+  url={http://www.cc.gatech.edu/~jeisenst/papers/icml2011.pdf},
+}
+</pre>
+  <p class="note">Presents a new generative model of text, based on the 
+principle of sparse deviation from a background word distribution. This 
+approach proves effective in supervised, unsupervised, and latent 
+variable settings.</p>
+</div>
+<div class="entry">
+<a name="erosheva2004mixed"></a>
+    <div class="metadata">
+<span class="clickable">Elena Erosheva</span>, <span class="clickable">Stephen Fienberg</span>, <span class="clickable">John Lafferty</span>.
+Mixed Membership Models of Scientific Publications. 
+<span class="clickable">PNAS</span> (101) <span class="clickable">2004</span> pp. 5220-5227.
+</div>
+<div class="entry-tags"><span class="keyword clickable">Bibliometrics</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@article{erosheva2004mixed,
+  author={Elena Erosheva and Stephen Fienberg and John Lafferty},
+  title={Mixed Membership Models of Scientific Publications},
+  journal={PNAS},
+  year={2004},
+  volume={101},
+  number={Suppl. 1},
+  pages={5220-5227},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="gensim"></a>
+<div class="metadata">
+<span class="clickable">Radim Řehůřek</span>.
+<a href="http://nlp.fi.muni.cz/projekty/gensim/">gensim</a>. 
+(<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Implementations</span></div>
+<div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+<pre>@misc{gensim,
+  author={Radim Řehůřek},
+  title={gensim},
+  year={2009},
+  url={http://nlp.fi.muni.cz/projekty/gensim/},
+}
+</pre>
+<p class="note">
+Python package for topic modelling, includes distributed and online implementation of variational LDA.
+</p>
+</div>
+<div class="entry">
+<a name="gerrish2010language"></a>
+    <div class="metadata">
+<span class="clickable">Sean Gerrish</span>, <span class="clickable">David M. Blei</span>.
+<a href="http://www.cs.princeton.edu/%7Eblei/papers/GerrishBlei2010.pdf">A language-based approach to measuring scholarly impact</a>.
+<span class="clickable">ICML</span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Bibliometrics</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{gerrish2010language,
+  author={Sean Gerrish and David M. Blei},
+  title={A language-based approach to measuring scholarly impact},
+  booktitle={ICML},
+  year={2010},
+  url={http://www.cs.princeton.edu/~blei/papers/GerrishBlei2010.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="girolami2003on"></a>
+    <div class="metadata">
+<span class="clickable">Mark Girolami</span>, <span class="clickable">Ata Kabán</span>.
+On an equivalence between pLSI and LDA.
+<span class="clickable">SIGIR</span> (<span class="clickable">2003</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Theory</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{girolami2003on,
+  author={Mark Girolami and Ata Kabán},
+  title={On an equivalence between pLSI and LDA},
+  booktitle={SIGIR},
+  year={2003},
+  pages={433-434},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="gohr2010visually"></a>
+<div class="metadata">
+<span class="clickable">Andre Gohr</span>, <span class="clickable">Myra Spiliopoulou</span>, <span class="clickable">Alexander Hinneburg</span>.
+<a href="http://users.informatik.uni-halle.de/%7Ehinnebur/PS_Files/kdir2010_TT.pdf">Visually Summarizing the Evolution of Documents under a Social Tag</a>.
+<span class="clickable">KDIR</span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Temporal</span></div>
+<div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+<pre>@inproceedings{gohr2010visually,
+  author={Andre Gohr and Myra Spiliopoulou and Alexander Hinneburg},
+  title={Visually Summarizing the Evolution of Documents under a Social Tag},
+  booktitle={KDIR},
+  year={2010},
+  url={http://users.informatik.uni-halle.de/~hinnebur/PS_Files/kdir2010_TT.pdf},
+}
+</pre>
+</div>
+<div class="entry">
+<a name="gohr2009"></a>
+<div class="metadata">
+<span class="clickable">Andre Gohr</span>, <span class="clickable">Alexander Hinneburg</span>, <span class="clickable">Rene Schult</span>, <span class="clickable">Myra Spiliopoulou</span>.
+<a href="http://users.informatik.uni-halle.de/%7Ehinnebur/PS_Files/sdm09_APLSA.pdf">Topic Evolution in a Stream of Documents</a>.
+<span class="clickable">SDM</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Temporal</span></div>
+<div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+<pre>@inproceedings{gohr2009,
+  author={Andre Gohr and Alexander Hinneburg and Rene Schult and Myra Spiliopoulou},
+  title={Topic Evolution in a Stream of Documents},
+  booktitle={SDM},
+  year={2009},
+  pages={859-870},
+  url={http://users.informatik.uni-halle.de/~hinnebur/PS_Files/sdm09_APLSA.pdf},
+}
+</pre>
+</div>
+<div class="entry">
+<a name="griffiths04finding"></a>
+    <div class="metadata">
+<span class="clickable">Thomas L. Griffiths</span>, <span class="clickable">Mark Steyvers</span>.
+Finding Scientific Topics. 
+<span class="clickable">PNAS</span> (101) <span class="clickable">2004</span> pp. 5228-5235.
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@article{griffiths04finding,
+  author={Thomas L. Griffiths and Mark Steyvers},
+  title={Finding Scientific Topics},
+  journal={PNAS},
+  year={2004},
+  volume={101},
+  number={suppl. 1},
+  pages={5228-5235},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="griffiths2004integrating"></a>
+    <div class="metadata">
+<span class="clickable">Thomas L. Griffiths</span>, <span class="clickable">Mark Steyvers</span>, <span class="clickable">David M. Blei</span>, <span class="clickable">Joshua B. Tenenbaum</span>.
+<a href="http://books.nips.cc/papers/files/nips17/NIPS2004_0642.pdf">Integrating Topics and Syntax</a>. 
+In , <span class="clickable">NIPS</span> (<span class="clickable">2004</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">NLP</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@incollection{griffiths2004integrating,
+  author={Thomas L. Griffiths and Mark Steyvers and David M. Blei and Joshua B. Tenenbaum},
+  editor={},
+  title={Integrating Topics and Syntax},
+  booktitle={NIPS},
+  year={2004},
+  pages={537-544},
+  url={http://books.nips.cc/papers/files/nips17/NIPS2004_0642.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="hall2008studying"></a>
+    <div class="metadata">
+<span class="clickable">David Hall</span>, <span class="clickable">Daniel Jurafsky</span>, <span class="clickable">Christopher D. Manning</span>.
+Studying the History of Ideas Using Topic Models.
+<span class="clickable">EMNLP</span> (<span class="clickable">2008</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Bibliometrics</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{hall2008studying,
+  author={David Hall and Daniel Jurafsky and Christopher D. Manning},
+  title={Studying the History of Ideas Using Topic Models},
+  booktitle={EMNLP},
+  year={2008},
+  pages={363-371},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="heinrich2004parameter"></a>
+    <div class="metadata">
+<span class="clickable">Gregor Heinrich</span>.
+<a href="http://www.arbylon.net/publications/text-est.pdf">Parameter Estimation for Text Analysis</a>. 
+(<span class="clickable">2004</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Inference</span></div>
+  <div class="show-hide">
+<span class="bibtex-button">[BibTeX]</span><span class="abstract-button">[Abstract]</span>
+</div>
+    <pre>@techreport{heinrich2004parameter,
+  author={Gregor Heinrich},
+  title={Parameter Estimation for Text Analysis},
+  year={2004},
+  url={http://www.arbylon.net/publications/text-est.pdf},
+}
+</pre>
+  <p class="abstract">Presents parameter estimation methods common with 
+discrete probability distributions, which is of particular interest in 
+text modeling. Starting with maximum likelihood, a posteriori and 
+Bayesian estimation, central concepts like conjugate distributions and 
+Bayesian networks are reviewed. As an application, the model of latent 
+Dirichlet allocation (LDA) is explained in detail with a full derivation
+ of an approximate inference algorithm based on Gibbs sampling, 
+including a discussion of Dirichlet hyperparameter estimation.</p>
+</div>
+<div class="entry">
+<a name="heinrich2009generic"></a>
+    <div class="metadata">
+<span class="clickable">Gregor Heinrich</span>.
+<a href="http://arbylon.net/publications/mixnet-gibbs.pdf">A generic approach to topic models</a>.
+<span class="clickable">ECML/PKDD</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Scalability</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{heinrich2009generic,
+  author={Gregor Heinrich},
+  title={A generic approach to topic models},
+  booktitle={ECML/PKDD},
+  year={2009},
+  url={http://arbylon.net/publications/mixnet-gibbs.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="heinrich2011infinite"></a>
+    <div class="metadata">
+<span class="clickable">Gregor Heinrich</span>.
+<a href="http://arbylon.net/projects/knowceans-ilda/knowceans-ilda.zip">Infinite LDA</a>. 
+(<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags">
+<span class="keyword clickable">Implementations</span><span class="keyword clickable">Non-parametric</span>
+</div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{heinrich2011infinite,
+  author={Gregor Heinrich},
+  title={Infinite LDA},
+  year={2011},
+  url={http://arbylon.net/projects/knowceans-ilda/knowceans-ilda.zip},
+}
+</pre>
+  <p class="note">A simple implementation of a non-parametric model, 
+where the number of topics is not fixed in advance. Uses Teh's direct 
+assignment method for HDP.</p>
+</div>
+<div class="entry">
+<a name="hinneburg2007bayesian"></a>
+<div class="metadata">
+<span class="clickable">Alexander Hinneburg</span>, <span class="clickable">Hans-Henning Gabriel</span>, <span class="clickable">Andre Gohr</span>.
+<a href="http://users.informatik.uni-halle.de/%7Ehinnebur/PS_Files/blsi_icdm07.pdf">Bayesian Folding-In with Dirichlet Kernels for PLSI</a>.
+<span class="clickable">ICDM</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Theory</span></div>
+<div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+<pre>@inproceedings{hinneburg2007bayesian,
+  author={Alexander Hinneburg and Hans-Henning Gabriel and Andre Gohr},
+  title={Bayesian Folding-In with Dirichlet Kernels for PLSI},
+  booktitle={ICDM},
+  year={2007},
+  pages={499-504},
+  url={http://users.informatik.uni-halle.de/~hinnebur/PS_Files/blsi_icdm07.pdf},
+}
+</pre>
+</div>
+<div class="entry">
+<a name="hofmann1999plsa"></a>
+    <div class="metadata">
+<span class="clickable">Thomas Hofmann</span>.
+Probilistic latent semantic analysis.
+<span class="clickable">UAI</span> (<span class="clickable">1999</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{hofmann1999plsa,
+  author={Thomas Hofmann},
+  title={Probilistic latent semantic analysis},
+  booktitle={UAI},
+  year={1999},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="hoffman2010online"></a>
+    <div class="metadata">
+<span class="clickable">Matthew Hoffman</span>, <span class="clickable">David M. Blei</span>, <span class="clickable">Francis Bach</span>.
+Online Learning for Latent Dirichlet Allocation.
+<span class="clickable">NIPS</span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{hoffman2010online,
+  author={Matthew Hoffman and David M. Blei and Francis Bach},
+  title={Online Learning for Latent Dirichlet Allocation},
+  booktitle={NIPS},
+  year={2010},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="jagarlamudi2010extracting"></a>
+    <div class="metadata">
+<span class="clickable">Jagadeesh Jagarlamudi</span>, <span class="clickable">Hal Daumé III</span>.
+<a href="http://dx.doi.org/10.1007/978-3-642-12275-0_39">Extracting Multilingual Topics from Unaligned Comparable Corpora</a>.
+<span class="clickable"></span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Cross-language</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{jagarlamudi2010extracting,
+  author={Jagadeesh Jagarlamudi and Hal Daumé III},
+  title={Extracting Multilingual Topics from Unaligned Comparable Corpora},
+  booktitle={},
+  year={2010},
+  url={http://dx.doi.org/10.1007/978-3-642-12275-0_39},
+  pages={444--456},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="johnson2010pcfgs"></a>
+    <div class="metadata">
+<span class="clickable">Mark Johnson</span>.
+PCFGs, Topic Models, Adaptor Grammars, and Learning Topical Collocations and the Structure of Proper Names.
+<span class="clickable"></span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">NLP</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{johnson2010pcfgs,
+  author={Mark Johnson},
+  title={PCFGs, Topic Models, Adaptor Grammars, and Learning Topical Collocations and the Structure of Proper Names},
+  booktitle={},
+  year={2010},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="kivinen2007learning"></a>
+   <div class="metadata">
+<span class="clickable">Jyri J. Kivinen</span>, <span class="clickable">Erik B. Sudderth</span>, <span class="clickable">Michael I. Jordan</span>.
+<a href="http://www.cs.berkeley.edu/%7Ejordan/papers/kivinen-sudderth-jordan-iccv07.pdf">Learning Multiscale Representations of Natural Scenes Using Dirichlet Processes</a>.
+<span class="clickable">ICCV</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags">
+<span class="keyword clickable">Non-parametric</span><span class="keyword clickable">Vision</span>
+</div>
+<div class="show-hide">
+<span class="bibtex-button">[BibTeX]</span><span class="abstract-button">[Abstract]</span>
+</div>
+   <pre>@inproceedings{kivinen2007learning,
+  author={Jyri J. Kivinen and Erik B. Sudderth and Michael I. Jordan},
+  title={Learning Multiscale Representations of Natural Scenes Using Dirichlet Processes},
+  booktitle={ICCV},
+  year={2007},
+  url={http://www.cs.berkeley.edu/~jordan/papers/kivinen-sudderth-jordan-iccv07.pdf},
+}
+</pre>
+<p class="abstract">We develop nonparametric Bayesian models for 
+multiscale representations of images depicting natural scene categories.
+ Individual features or wavelet coefficients are marginally described by
+ Dirichlet process (DP) mixtures, yielding the heavy-tailed marginal 
+distributions characteristic of natural images. Dependencies between 
+features are then captured with a hidden Markov tree, and Markov chain 
+Monte Carlo methods used to learn models whose latent state space grows 
+in complexity as more images are observed. By truncating the potentially
+ infinite set of hidden states, we are able to exploit efficient belief 
+propagation methods when learning these hierarchical Dirichlet process 
+hidden Markov trees (HDP-HMTs) from data. We show that our generative 
+models capture interesting qualitative structure in natural scenes, and 
+more accurately categorize novel images than models which ignore spatial
+ relationships among features.</p>
+<p class="note">The paper introduces a blocked Gibbs sampler for 
+learning a nonparametric Bayesian topic model whose topic assignments 
+are coupled with a tree-structured graphical model.</p>
+</div>
+<div class="entry">
+<a name="lacoste2008disclda"></a>
+    <div class="metadata">
+<span class="clickable">Simon Lacoste-Julien</span>, <span class="clickable">Fei Sha</span>, <span class="clickable">Michael I. Jordan</span>.
+<a href="http://books.nips.cc/papers/files/nips21/NIPS2008_0993.pdf">DiscLDA: Discriminative Learning for Dimensionality Reduction and Classification</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2008</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{lacoste2008disclda,
+  author={Simon Lacoste-Julien and Fei Sha and Michael I. Jordan},
+  title={DiscLDA: Discriminative Learning for Dimensionality Reduction and Classification},
+  booktitle={NIPS},
+  year={2008},
+  url={http://books.nips.cc/papers/files/nips21/NIPS2008_0993.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="landauer1997solutions"></a>
+    <div class="metadata">
+<span class="clickable">Thomas K. Landauer</span>, <span class="clickable">Susan T. Dumais</span>.
+Solutions to Plato's problem: The latent semantic analysis theory of acquisition, induction, and representation of knowledge. 
+<span class="clickable">Psychological Review</span> () <span class="clickable">1997</span> pp. .
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@article{landauer1997solutions,
+  author={Thomas K. Landauer and Susan T. Dumais},
+  title={Solutions to Plato's problem: The latent semantic analysis theory of acquisition, induction, and representation of knowledge},
+  journal={Psychological Review},
+  year={1997},
+  number={104},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="vowpalwabbit"></a>
+    <div class="metadata">
+<span class="clickable">John Langford</span>.
+<a href="https://github.com/JohnLangford/vowpal_wabbit/wiki">Vowpal Wabbit</a>. 
+(<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Implementations</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{vowpalwabbit,
+  author={John Langford},
+  title={Vowpal Wabbit},
+  year={2011},
+  url={https://github.com/JohnLangford/vowpal_wabbit/wiki},
+}
+</pre>
+  <p class="note">VW includes an implementation of <a href="#hoffman2010online">Hoffman et al.</a>'s online variational LDA.</p>
+</div>
+<div class="entry">
+<a name="li2007nonparametric"></a>
+    <div class="metadata">
+<span class="clickable">Wei Li</span>, <span class="clickable">David Blei</span>, <span class="clickable">Andrew McCallum</span>.
+Nonparametric Bayes Pachinko Allocation. 
+(<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Non-parametric</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@techreport{li2007nonparametric,
+  author={Wei Li and David Blei and Andrew McCallum},
+  title={Nonparametric Bayes Pachinko Allocation},
+  year={2007},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="lin2008joint"></a>
+    <div class="metadata">
+<span class="clickable">Wei-Hao Lin</span>, <span class="clickable">Eric P. Xing</span>, <span class="clickable">Alexander Hauptmann</span>.
+<a href="http://portal.acm.org/citation.cfm?id=1431999.1432002">A Joint Topic and Perspective Model for Ideological Discourse</a>.
+<span class="clickable">ECML PKDD</span> (<span class="clickable">2008</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{lin2008joint,
+  author={Wei-Hao Lin and Eric P. Xing and Alexander Hauptmann},
+  title={A Joint Topic and Perspective Model for Ideological Discourse},
+  booktitle={ECML PKDD},
+  year={2008},
+  pages={17-32},
+  url={http://portal.acm.org/citation.cfm?id=1431999.1432002},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="mallet"></a>
+    <div class="metadata">
+<span class="clickable">Andrew Kachites McCallum</span>.
+<a href="http://mallet.cs.umass.edu/">MALLET: A Machine Learning for Language Toolkit</a>. 
+(<span class="clickable">2002</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Implementations</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{mallet,
+  author={Andrew Kachites McCallum},
+  title={MALLET: A Machine Learning for Language Toolkit},
+  year={2002},
+  url={http://mallet.cs.umass.edu},
+}
+</pre>
+  <p class="note">Implements Gibbs sampling for LDA in Java using fast sampling methods from <a href="#yao2009efficient">Yao et al.</a> MALLET also includes support for data preprocessing, classification, and sequence tagging.</p>
+</div>
+<div class="entry">
+<a name="mccallum2005topic"></a>
+    <div class="metadata">
+<span class="clickable">Andrew McCallum</span>, <span class="clickable">Andrés Corrada-Emmanuel</span>, <span class="clickable">Xuerui Wang</span>.
+Topic and Role Discovery in Social Networks.
+<span class="clickable">IJCAI</span> (<span class="clickable">2005</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Networks</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mccallum2005topic,
+  author={Andrew McCallum and Andrés Corrada-Emmanuel and Xuerui Wang},
+  title={Topic and Role Discovery in Social Networks},
+  booktitle={IJCAI},
+  year={2005},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="mei2007topic"></a>
+    <div class="metadata">
+<span class="clickable">Qiaozhu Mei</span>, <span class="clickable">Xu Ling</span>, <span class="clickable">Matthew Wondra</span>, <span class="clickable">Hang Su</span>, <span class="clickable">ChengXiang Zhai</span>.
+Topic sentiment mixture: modeling facets and opinions in weblogs.
+<span class="clickable">WWW</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mei2007topic,
+  author={Qiaozhu Mei and Xu Ling and Matthew Wondra and Hang Su and ChengXiang Zhai},
+  title={Topic sentiment mixture: modeling facets and opinions in weblogs},
+  booktitle={WWW},
+  year={2007},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="mei2007automatic"></a>
+    <div class="metadata">
+<span class="clickable">Qiaozhu Mei</span>, <span class="clickable">Xuehua Shen</span>, <span class="clickable">ChengXiang Zhai</span>.
+Automatic labeling of multinomial topic models.
+<span class="clickable">KDD</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">User interface</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mei2007automatic,
+  author={Qiaozhu Mei and Xuehua Shen and ChengXiang Zhai},
+  title={Automatic labeling of multinomial topic models},
+  booktitle={KDD},
+  year={2007},
+  pages={490-499},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="mei2008topic"></a>
+    <div class="metadata">
+<span class="clickable">Qiaozhu Mei</span>, <span class="clickable">Deng Cai</span>, <span class="clickable">Duo Zhang</span>, <span class="clickable">ChengXiang Zhai</span>.
+<a href="http://portal.acm.org/citation.cfm?id=1367512">Topic modeling with network regularization</a>.
+<span class="clickable">WWW</span> (<span class="clickable">2008</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Networks</span></div>
+  <div class="show-hide">
+<span class="bibtex-button">[BibTeX]</span><span class="abstract-button">[Abstract]</span>
+</div>
+    <pre>@inproceedings{mei2008topic,
+  author={Qiaozhu Mei and Deng Cai and Duo Zhang and ChengXiang Zhai},
+  title={Topic modeling with network regularization},
+  booktitle={WWW},
+  year={2008},
+  url={http://portal.acm.org/citation.cfm?id=1367512},
+}
+</pre>
+  <p class="abstract">In this paper, we formally define the problem of 
+topic modeling with network structure (TMN). We propose a novel solution
+ to this problem, which regularizes a statistical topic model with a 
+harmonic regularizer based on a graph structure in the data. The 
+proposed method bridges topic modeling and social network analysis, 
+which leverages the power of both statistical topic models and discrete 
+regularization. The output of this model well summarizes topics in text,
+ maps a topic on the network, and discovers topical communities. With 
+concrete selection of a topic model and a graph-based regularizer, our 
+model can be applied to text mining problems such as author-topic 
+analysis, community discovery, and spatial text mining. Empirical 
+experiments on two different genres of data show that our approach is 
+effective, which improves text-oriented methods as well as 
+network-oriented methods. The proposed model is general; it can be 
+applied to any text collections with a mixture of topics and an 
+associated network structure.</p>
+</div>
+<div class="entry">
+<a name="mimno2007expertise"></a>
+    <div class="metadata">
+<span class="clickable">David Mimno</span>, <span class="clickable">Andrew McCallum</span>.
+Expertise Modeling for Matching Papers with Reviewers.
+<span class="clickable">KDD</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mimno2007expertise,
+  author={David Mimno and Andrew McCallum},
+  title={Expertise Modeling for Matching Papers with Reviewers},
+  booktitle={KDD},
+  year={2007},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="mimno2007mining"></a>
+    <div class="metadata">
+<span class="clickable">David Mimno</span>, <span class="clickable">Andrew McCallum</span>.
+Mining a digital library for influential authors.
+<span class="clickable">JCDL</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Bibliometrics</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mimno2007mining,
+  author={David Mimno and Andrew McCallum},
+  title={Mining a digital library for influential authors},
+  booktitle={JCDL},
+  year={2007},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="mimno2007hierarchical"></a>
+    <div class="metadata">
+<span class="clickable">David Mimno</span>, <span class="clickable">Wei Li</span>, <span class="clickable">Andrew McCallum</span>.
+Mixtures of Hierarchical Topics with Pachinko Allocation.
+<span class="clickable">ICML</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mimno2007hierarchical,
+  author={David Mimno and Wei Li and Andrew McCallum},
+  title={Mixtures of Hierarchical Topics with Pachinko Allocation},
+  booktitle={ICML},
+  year={2007},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="mimno2008dmr"></a>
+    <div class="metadata">
+<span class="clickable">David Mimno</span>, <span class="clickable">Andrew McCallum</span>.
+<a href="http://www.cs.umass.edu/%7Emimno/papers/dmr-uai.pdf">Topic models conditioned on arbitrary features with Dirichlet-multinomial regression</a>.
+<span class="clickable">UAI</span> (<span class="clickable">2008</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mimno2008dmr,
+  author={David Mimno and Andrew McCallum},
+  title={Topic models conditioned on arbitrary features with Dirichlet-multinomial regression},
+  booktitle={UAI},
+  year={2008},
+  url={http://www.cs.umass.edu/~mimno/papers/dmr-uai.pdf},
+}
+</pre>
+  <p class="note">Per-document Dirichlet priors over topic distributions
+ are generated using a log-linear combination of observed document 
+features and learned feature-topic parameters. Implemented in <a href="#mallet">Mallet</a></p>
+</div>
+<div class="entry">
+<a name="mimno2008gibbs"></a>
+    <div class="metadata">
+<span class="clickable">David Mimno</span>, <span class="clickable">Hanna Wallach</span>, <span class="clickable">Andrew McCallum</span>.
+<a href="http://www.cs.umass.edu/%7Emimno/papers/sampledlgstnorm.pdf">Gibbs Sampling for Logistic Normal Topic Models with Graph-Based Priors</a>.
+<span class="clickable">NIPS Workshop on Analyzing Graphs</span> (<span class="clickable">2008</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Networks</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mimno2008gibbs,
+  author={David Mimno and Hanna Wallach and Andrew McCallum},
+  title={Gibbs Sampling for Logistic Normal Topic Models with Graph-Based Priors},
+  booktitle={NIPS Workshop on Analyzing Graphs},
+  year={2008},
+  url={http://www.cs.umass.edu/~mimno/papers/sampledlgstnorm.pdf},
+}
+</pre>
+  <p class="note">Introduces an auxiliary-variable method for Gibbs sampling in non-conjugate topic models.</p>
+</div>
+<div class="entry">
+<a name="mimno2009polylingual"></a>
+    <div class="metadata">
+<span class="clickable">David Mimno</span>, <span class="clickable">Hanna Wallach</span>, <span class="clickable">Jason Naradowsky</span>, <span class="clickable">David A. Smith</span>, <span class="clickable">Andrew McCallum</span>.
+<a href="http://www.cs.umass.edu/%7Emimno/papers/mimno2009polylingual.pdf">Polylingual Topic Models</a>.
+<span class="clickable">EMNLP</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Cross-language</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mimno2009polylingual,
+  author={David Mimno and Hanna Wallach and Jason Naradowsky and David A. Smith and Andrew McCallum},
+  title={Polylingual Topic Models},
+  booktitle={EMNLP},
+  year={2009},
+  url={http://www.cs.umass.edu/~mimno/papers/mimno2009polylingual.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="mimno2011reconstructing"></a>
+    <div class="metadata">
+<span class="clickable">David Mimno</span>.
+<a href="http://www.cs.princeton.edu/%7Emimno/papers/pompeii.pdf">Reconstructing Pompeian Households</a>.
+<span class="clickable">UAI</span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Cross-language</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mimno2011reconstructing,
+  author={David Mimno},
+  title={Reconstructing Pompeian Households},
+  booktitle={UAI},
+  year={2011},
+  url={http://www.cs.princeton.edu/~mimno/papers/pompeii.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="mimno2011optimizing"></a>
+    <div class="metadata">
+<span class="clickable">David Mimno</span>, <span class="clickable">Hanna Wallach</span>, <span class="clickable">Edmund Talley</span>, <span class="clickable">Miriam Leenders</span>, <span class="clickable">Andrew McCallum</span>.
+<a href="http://www.cs.princeton.edu/%7Emimno/papers/mimno-semantic-emnlp.pdf">Optimizing Semantic Coherence in Topic Models</a>.
+<span class="clickable">EMNLP</span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Evaluation</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mimno2011optimizing,
+  author={David Mimno and Hanna Wallach and Edmund Talley and Miriam Leenders and Andrew McCallum},
+  title={Optimizing Semantic Coherence in Topic Models},
+  booktitle={EMNLP},
+  year={2011},
+  url={http://www.cs.princeton.edu/~mimno/papers/mimno-semantic-emnlp.pdf},
+}
+</pre>
+  <p class="note">A simple, automated metric that uses only information 
+contained in the training documents has strong ability to predict human 
+judgments of topic coherence.</p>
+</div>
+<div class="entry">
+<a name="mimno2011bayesian"></a>
+    <div class="metadata">
+<span class="clickable">David Mimno</span>, <span class="clickable">David Blei</span>.
+<a href="http://www.cs.princeton.edu/%7Emimno/papers/mimno-ppcs-emnlp.pdf">Bayesian Checking for Topic Models</a>.
+<span class="clickable">EMNLP</span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Evaluation</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mimno2011bayesian,
+  author={David Mimno and David Blei},
+  title={Bayesian Checking for Topic Models},
+  booktitle={EMNLP},
+  year={2011},
+  url={http://www.cs.princeton.edu/~mimno/papers/mimno-ppcs-emnlp.pdf},
+}
+</pre>
+  <p class="note">Posterior predictive checks are useful in detecting 
+lack of fit in topic models and identifying which metadata-enriched 
+models might be useful</p>
+</div>
+<div class="entry">
+<a name="mukherjee2008relative"></a>
+    <div class="metadata">
+<span class="clickable">Indraneel Mukherjee</span>, <span class="clickable">David Blei</span>.
+<a href="http://books.nips.cc/papers/files/nips21/NIPS2008_0434.pdf">Relative Performance Guarantees for Approximate Inference in Latent Dirichlet Allocation</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2008</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Inference</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mukherjee2008relative,
+  author={Indraneel Mukherjee and David Blei},
+  title={Relative Performance Guarantees for Approximate Inference in Latent Dirichlet Allocation},
+  booktitle={NIPS},
+  year={2008},
+  url={http://books.nips.cc/papers/files/nips21/NIPS2008_0434.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="mukherjee2008relative"></a>
+    <div class="metadata">
+<span class="clickable">Indraneel Mukherjee</span>, <span class="clickable">David Blei</span>.
+<a href="http://books.nips.cc/papers/files/nips21/NIPS2008_0434.pdf">Relative Performance Guarantees for Approximate Inference in Latent Dirichlet Allocation</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2008</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Inference</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{mukherjee2008relative,
+  author={Indraneel Mukherjee and David Blei},
+  title={Relative Performance Guarantees for Approximate Inference in Latent Dirichlet Allocation},
+  booktitle={NIPS},
+  year={2008},
+  url={http://books.nips.cc/papers/files/nips21/NIPS2008_0434.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="musat2011improving"></a>
+    <div class="metadata">
+<span class="clickable">Claudiu Musat</span>, <span class="clickable">Julien Velcin</span>, <span class="clickable">Stefan Trausan-Matu</span>, <span class="clickable">Marian-Andrei Rizoiu</span>.
+Improving Topic Evaluation Using Conceptual Knowledge.
+<span class="clickable">IJCAI</span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Evaluation</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{musat2011improving,
+  author={Claudiu Musat and Julien Velcin and Stefan Trausan-Matu and Marian-Andrei Rizoiu},
+  title={Improving Topic Evaluation Using Conceptual Knowledge},
+  booktitle={IJCAI},
+  year={2011},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="nallapati2008joint"></a>
+    <div class="metadata">
+<span class="clickable">Ramesh Nallapati</span>, <span class="clickable">Amr Ahmed</span>, <span class="clickable">Eric P. Xing</span>, <span class="clickable">William Cohen</span>.
+<a href="http://portal.acm.org/citation.cfm?id=1401957">Joint Latent Topic Models for Text and Citations</a>.
+<span class="clickable">KDD</span> (<span class="clickable">2008</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Networks</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{nallapati2008joint,
+  author={Ramesh Nallapati and Amr Ahmed and Eric P. Xing and William Cohen},
+  title={Joint Latent Topic Models for Text and Citations},
+  booktitle={KDD},
+  year={2008},
+  url={http://portal.acm.org/citation.cfm?id=1401957},
+  pages={542--550},
+}
+</pre>
+  <p class="note">This is one of the first papers to address joint topic
+ models of text and hyperlinks. Used as a baseline in the more recent 
+Relational Topic Models. (R.N.)</p>
+</div>
+<div class="entry">
+<a name="nallapati2007multiscale"></a>
+    <div class="metadata">
+<span class="clickable">Ramesh Nallapati</span>, <span class="clickable">William Cohen</span>, <span class="clickable">Susan Ditmore</span>, <span class="clickable">John Lafferty</span>, <span class="clickable">Kin Ung</span>.
+<a href="http://portal.acm.org/citation.cfm?id=1281249">Multi-scale Topic Tomography</a>.
+<span class="clickable">KDD</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Temporal</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{nallapati2007multiscale,
+  author={Ramesh Nallapati and William Cohen and Susan Ditmore and John Lafferty and Kin Ung},
+  title={Multi-scale Topic Tomography},
+  booktitle={KDD},
+  year={2007},
+  url={http://portal.acm.org/citation.cfm?id=1281249},
+  pages={520--529},
+}
+</pre>
+  <p class="note">Models variation of topic content with time at various
+ scales of resolution. A novel variant of dynamic topic models that uses
+ the Poisson distribution for word generation, and wavelets. (R.N.)</p>
+</div>
+<div class="entry">
+<a name="nallapati2007parallelized"></a>
+    <div class="metadata">
+<span class="clickable">Ramesh Nallapati</span>, <span class="clickable">William Cohen</span>, <span class="clickable">John Lafferty</span>.
+<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.68.4178amp;&amp;rep=rep1&amp;type=pdf">Parallelized Variational EM for Latent Dirichlet Allocation: An experimental evaluation of speed and scalability</a>.
+<span class="clickable">ICDM workshop on high performance data mining</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Scalability</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{nallapati2007parallelized,
+  author={Ramesh Nallapati and William Cohen and John Lafferty},
+  title={Parallelized Variational EM for Latent Dirichlet Allocation: An experimental evaluation of speed and scalability},
+  booktitle={ICDM workshop on high performance data mining},
+  year={2007},
+  url={http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.68.4178amp;&amp;rep=rep1&amp;type=pdf},
+}
+</pre>
+  <p class="note">Early paper on parallel implementations of variational EM for LDA. (R.N.)</p>
+</div>
+<div class="entry">
+<a name="nallapati2010multi-lda-c"></a>
+    <div class="metadata">
+<span class="clickable">Ramesh Nallapati</span>.
+<a href="https://sites.google.com/site/rameshnallapati/software">multithreaded lda-c</a>. 
+(<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Implementations</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{nallapati2010multi-lda-c,
+  author={Ramesh Nallapati},
+  title={multithreaded lda-c},
+  year={2010},
+  url={https://sites.google.com/site/rameshnallapati/software},
+}
+</pre>
+  <p class="note">Multi Threaded extension of David Blei's LDA 
+implementation in C. Speeds up the computation by orders of magnitude 
+depending on the number of processors.</p>
+</div>
+<div class="entry">
+<a name="newman2006statistical"></a>
+    <div class="metadata">
+<span class="clickable">David Newman</span>, <span class="clickable">Chaitanya Chemudugunta</span>, <span class="clickable">Padhraic Smyth</span>.
+Statistical entity-topic models.
+<span class="clickable">KDD</span> (<span class="clickable">2006</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{newman2006statistical,
+  author={David Newman and Chaitanya Chemudugunta and Padhraic Smyth},
+  title={Statistical entity-topic models},
+  booktitle={KDD},
+  year={2006},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="newman2005probabilistic"></a>
+    <div class="metadata">
+<span class="clickable">D. Newman</span>, <span class="clickable">S. Block</span>.
+Probabilistic Topic Decomposition of an Eighteenth-Century American Newspaper. 
+<span class="clickable">JASIST</span> () <span class="clickable">2006</span> pp. .
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@article{newman2005probabilistic,
+  author={D. Newman and S. Block},
+  title={Probabilistic Topic Decomposition of an Eighteenth-Century American Newspaper},
+  journal={JASIST},
+  year={2006},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="newman2010automatic"></a>
+    <div class="metadata">
+<span class="clickable">David Newman</span>, <span class="clickable">Jey Han Lau</span>, <span class="clickable">Karl Grieser</span>, <span class="clickable">Timothy Baldwin</span>.
+Automatic Evaluation of Topic Coherence.
+<span class="clickable">NAACL</span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Evaluation</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{newman2010automatic,
+  author={David Newman and Jey Han Lau and Karl Grieser and Timothy Baldwin},
+  title={Automatic Evaluation of Topic Coherence},
+  booktitle={NAACL},
+  year={2010},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="ni2009multilingual"></a>
+    <div class="metadata">
+<span class="clickable">Xiaochuan Ni</span>, <span class="clickable">Jian-Tao Sun</span>, <span class="clickable">Jian Hu</span>, <span class="clickable">Zheng Chen</span>.
+<a href="http://www2009.eprints.org/158/">Mining Multilingual Topics from Wikipedia</a>.
+<span class="clickable">WWW</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Cross-language</span></div>
+  <div class="show-hide">
+<span class="bibtex-button">[BibTeX]</span><span class="abstract-button">[Abstract]</span>
+</div>
+    <pre>@inproceedings{ni2009multilingual,
+  author={Xiaochuan Ni and Jian-Tao Sun and Jian Hu and Zheng Chen},
+  title={Mining Multilingual Topics from Wikipedia},
+  booktitle={WWW},
+  year={2009},
+  url={http://www2009.eprints.org/158/},
+}
+</pre>
+  <p class="abstract">In this paper, we try to leverage a large-scale 
+and multilingual knowledge base, Wikipedia, to help effectively analyze 
+and organize Web information written in different languages. Based on 
+the observation that one Wikipedia concept may be described by articles 
+in different languages, we adapt existing topic modeling algorithm for 
+mining multilingual topics from this knowledge base. The extracted 
+"universal" topics have multiple types of representations, with each 
+type corresponding to one language. Accordingly, new documents of 
+different languages can be represented in a space using a group of 
+universal topics, which makes various multilingual Web applications 
+feasible.</p>
+</div>
+<div class="entry">
+<a name="gibbslda++"></a>
+    <div class="metadata">
+<span class="clickable">Xuan-Hieu Phan</span>, <span class="clickable">Cam-Tu Nguyen</span>.
+<a href="http://gibbslda.sourceforge.net/">GibbsLDA++</a>. 
+(<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Implementations</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{gibbslda++,
+  author={Xuan-Hieu Phan and Cam-Tu Nguyen},
+  title={GibbsLDA++},
+  year={2007},
+  url={http://gibbslda.sourceforge.net},
+}
+</pre>
+  <p class="note">C/C++ implementation of LDA with Gibbs sampling.</p>
+</div>
+<div class="entry">
+<a name="perkio2004exploring"></a>
+    <div class="metadata">
+<span class="clickable">Jukka Perkiö</span>, <span class="clickable">Wray L. Buntine</span>, <span class="clickable">Sami Perttu</span>.
+Exploring Independent Trends in a Topic-Based Search Engine.
+<span class="clickable">Web Intelligence</span> (<span class="clickable">2004</span>).
+</div>
+<div class="entry-tags"></div> 
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{perkio2004exploring,
+  author={Jukka Perkiö and Wray L. Buntine and Sami Perttu},
+  title={Exploring Independent Trends in a Topic-Based Search Engine},
+  booktitle={Web Intelligence},
+  year={2004},
+  pages={664-668},
+}
+</pre> 
+  </div>
+<div class="entry">
+<a name="purver2006unsupervised"></a>
+    <div class="metadata">
+<span class="clickable">Matthew Purver</span>, <span class="clickable">Konrad Körding</span>, <span class="clickable">Thomas L. Griffiths</span>, <span class="clickable">Joshua Tenenbaum</span>.
+<a href="http://web.mit.edu/cocosci/Papers/purver-et-al06acl.pdf">Unsupervised Topic Modelling for Multi-Party Spoken Discourse</a>.
+<span class="clickable">ACL</span> (<span class="clickable">2006</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{purver2006unsupervised,
+  author={Matthew Purver and Konrad Körding and Thomas L. Griffiths and Joshua Tenenbaum},
+  title={Unsupervised Topic Modelling for Multi-Party Spoken Discourse},
+  booktitle={ACL},
+  year={2006},
+  url={http://web.mit.edu/cocosci/Papers/purver-et-al06acl.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="ramage-tmt"></a>
+    <div class="metadata">
+<span class="clickable">Daniel Ramage</span>, <span class="clickable">Evan Rosen</span>.
+<a href="http://nlp.stanford.edu/software/tmt/tmt-0.3/">Stanford Topic Modeling Toolbox</a>. 
+(<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Implementations</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{ramage-tmt,
+  author={Daniel Ramage and Evan Rosen},
+  title={Stanford Topic Modeling Toolbox},
+  year={2009},
+  url={http://nlp.stanford.edu/software/tmt/tmt-0.3/},
+}
+</pre>
+  <p class="note">Scala implementation of LDA and <a href="#ramage2009labeled">LabeledLDA</a>. Input and output integration with Excel.</p>
+</div>
+<div class="entry">
+<a name="ramage2009labeled"></a>
+    <div class="metadata">
+<span class="clickable">Daniel Ramage</span>, <span class="clickable">David Hall</span>, <span class="clickable">Ramesh Nallapati</span>, <span class="clickable">Christopher D. Manning</span>.
+Labeled LDA: A Supervised Topic Model for Credit Attribution in Multi-Labeled Corpora.
+<span class="clickable">EMNLP</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{ramage2009labeled,
+  author={Daniel Ramage and David Hall and Ramesh Nallapati and Christopher D. Manning},
+  title={Labeled LDA: A Supervised Topic Model for Credit Attribution in Multi-Labeled Corpora},
+  booktitle={EMNLP},
+  year={2009},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="ramage2010characterizing"></a>
+    <div class="metadata">
+<span class="clickable">Daniel Ramage</span>, <span class="clickable">Susan Dumais</span>, <span class="clickable">Dan Liebling</span>.
+<a href="http://www.stanford.edu/%7Edramage/papers/twitter-icwsm10.pdf">Characterizing Microblogs with Topic Models</a>.
+<span class="clickable">ICWSM</span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{ramage2010characterizing,
+  author={Daniel Ramage and Susan Dumais and Dan Liebling},
+  title={Characterizing Microblogs with Topic Models},
+  booktitle={ICWSM},
+  year={2010},
+  url={http://www.stanford.edu/~dramage/papers/twitter-icwsm10.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="reisinger2010spherical"></a>
+    <div class="metadata">
+<span class="clickable">Joseph Reisinger</span>, <span class="clickable">Austin Waters</span>, <span class="clickable">Brian Silverthorn</span>, <span class="clickable">Raymond J. Mooney</span>.
+<a href="http://www.cs.utexas.edu/users/ml/papers/reisinger.icml10.pdf">Spherical Topic Models</a>.
+<span class="clickable">ICML</span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide">
+<span class="bibtex-button">[BibTeX]</span><span class="abstract-button">[Abstract]</span>
+</div>
+    <pre>@inproceedings{reisinger2010spherical,
+  author={Joseph Reisinger and Austin Waters and Brian Silverthorn and Raymond J. Mooney},
+  title={Spherical Topic Models},
+  booktitle={ICML},
+  year={2010},
+  url={http://www.cs.utexas.edu/users/ml/papers/reisinger.icml10.pdf},
+}
+</pre>
+  <p class="abstract">We introduce the Spherical Admixture Model (SAM), a
+ Bayesian topic model for arbitrary L2 normalized data. SAM maintains 
+the same hierarchical structure as Latent Dirichlet Allocation (LDA), 
+but models documents as points on a high-dimensional spherical manifold,
+ allowing a natural likelihood parameterization in terms of cosine 
+distance. Furthermore, SAM can model word absence/presence at the 
+document level, and unlike previous models can assign explicit negative 
+weight to topic terms. Performance is evaluated empirically, both 
+through human ratings of topic quality and through diverse 
+classification tasks from natural language processing and computer 
+vision. In these experiments, SAM consistently outperforms existing 
+models.</p>
+</div>
+<div class="entry">
+<a name="rosenzvi2004author"></a>
+    <div class="metadata">
+<span class="clickable">Michal Rosen-Zvi</span>, <span class="clickable">Tom Griffiths</span>, <span class="clickable">Mark Steyvers</span>, <span class="clickable">Padhraic Smyth</span>.
+The Author-Topic Model for Authors and Documents.
+<span class="clickable">UAI</span> (<span class="clickable">2004</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{rosenzvi2004author,
+  author={Michal Rosen-Zvi and Tom Griffiths and Mark Steyvers and Padhraic Smyth},
+  title={The Author-Topic Model for Authors and Documents},
+  booktitle={UAI},
+  year={2004},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="salakhutdinov2009replicated"></a>
+    <div class="metadata">
+<span class="clickable">Ruslan Salakhutdinov</span>, <span class="clickable">Geoffrey Hinton</span>.
+<a href="http://books.nips.cc/papers/files/nips22/NIPS2009_0817.pdf">Replicated Softmax: an Undirected Topic Model</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{salakhutdinov2009replicated,
+  author={Ruslan Salakhutdinov and Geoffrey Hinton},
+  title={Replicated Softmax: an Undirected Topic Model},
+  booktitle={NIPS},
+  year={2009},
+  url={http://books.nips.cc/papers/files/nips22/NIPS2009_0817.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="YahooLDA"></a>
+    <div class="metadata">
+<span class="clickable">Shravan Narayanamurthy</span>.
+<a href="https://github.com/shravanmn/Yahoo_LDA/wiki">Yahoo! LDA</a>. 
+(<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Implementations</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{YahooLDA,
+  author={Shravan Narayanamurthy},
+  title={Yahoo! LDA},
+  year={2011},
+  url={https://github.com/shravanmn/Yahoo_LDA/wiki},
+}
+</pre>
+  <p class="note">Y!LDA implements a fast, sampling-based, distributed algorithm. See <a href="#smola2010architecture">Smola and Narayanamurthy</a> for details.</p>
+</div>
+<div class="entry">
+<a name="smola2010architecture"></a>
+    <div class="metadata">
+<span class="clickable">Alexander Smola</span>, <span class="clickable">Shravan Narayanamurthy</span>.
+An Architecture for Parallel Topic Models.
+<span class="clickable">VLDB</span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Scalability</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{smola2010architecture,
+  author={Alexander Smola and Shravan Narayanamurthy},
+  title={An Architecture for Parallel Topic Models},
+  booktitle={VLDB},
+  year={2010},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="steyvers-tmtb"></a>
+    <div class="metadata">
+<span class="clickable">Mark Steyvers</span>, <span class="clickable">Tom Griffiths</span>.
+<a href="http://psiexp.ss.uci.edu/research/programs_data/toolbox.htm">Matlab Topic Modeling Toolbox</a>. 
+(<span class="clickable">2005</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Implementations</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{steyvers-tmtb,
+  author={Mark Steyvers and Tom Griffiths},
+  title={Matlab Topic Modeling Toolbox},
+  year={2005},
+  url={http://psiexp.ss.uci.edu/research/programs_data/toolbox.htm},
+}
+</pre>
+  <p class="note">Implements LDA, Author-Topic, HMM-LDA, LDA-COL. Tools for 2D visualization.</p>
+</div>
+<div class="entry">
+<a name="steyvers2006probabilistic"></a>
+    <div class="metadata">
+<span class="clickable">Mark Steyvers</span>, <span class="clickable">Tom Griffiths</span>.
+<a href="http://cocosci.berkeley.edu/tom/papers/SteyversGriffiths.pdf">Probabilistic Topic Models</a>. 
+In <span class="clickable">Landauer, T.</span>, <span class="clickable">Mcnamara, D.</span>, <span class="clickable">Dennis, S.</span>, <span class="clickable">Kintsch, W.</span>, <span class="clickable">Latent Semantic Analysis: A Road to Meaning.</span> (<span class="clickable">2006</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Where to start</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@incollection{steyvers2006probabilistic,
+  author={Mark Steyvers and Tom Griffiths},
+  editor={Landauer, T. and Mcnamara, D. and Dennis, S. and Kintsch, W.},
+  title={Probabilistic Topic Models},
+  booktitle={Latent Semantic Analysis: A Road to Meaning.},
+  year={2006},
+  publisher={Laurence Erlbaum},
+  url={http://cocosci.berkeley.edu/tom/papers/SteyversGriffiths.pdf},
+}
+</pre>
+  <p class="note">A good introduction to topic modeling.</p>
+</div>
+<div class="entry">
+<a name="taranto2011rslda"></a>
+    <div class="metadata">
+<span class="clickable">Claudio Taranto</span>, <span class="clickable">Nicola Di Mauro</span>, <span class="clickable">Floriana Esposito</span>.
+<a href="http://www.di.uniba.it/%7Endm/publications/files/taranto11icdke.pdf">rsLDA: a Bayesian Hierarchical Model for Relational Learning</a>.
+<span class="clickable">ICDKE</span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{taranto2011rslda,
+  author={Claudio Taranto and Nicola Di Mauro and Floriana Esposito},
+  title={rsLDA: a Bayesian Hierarchical Model for Relational Learning},
+  booktitle={ICDKE},
+  year={2011},
+  url={http://www.di.uniba.it/~ndm/publications/files/taranto11icdke.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="teh2006collapsed"></a>
+    <div class="metadata">
+<span class="clickable">Yee-Whye Teh</span>, <span class="clickable">David Newman</span>, <span class="clickable">Max Welling</span>.
+<a href="http://books.nips.cc/papers/files/nips19/NIPS2006_0511.pdf">A Collapsed Variational Bayesian Inference Algorithm for Latent Dirichlet Allocation</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2006</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Inference</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{teh2006collapsed,
+  author={Yee-Whye Teh and David Newman and Max Welling},
+  title={A Collapsed Variational Bayesian Inference Algorithm for Latent Dirichlet Allocation},
+  booktitle={NIPS},
+  year={2006},
+  url={http://books.nips.cc/papers/files/nips19/NIPS2006_0511.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="teh2006hierarchical"></a>
+    <div class="metadata">
+<span class="clickable">Yee Whye Teh</span>, <span class="clickable">Michael I. Jordan</span>, <span class="clickable">Matthew J. Beal</span>, <span class="clickable">David M. Blei</span>.
+<a href="http://dx.doi.org/10.1198/016214506000000302">Hierarchical Dirichlet Processes</a>. 
+<span class="clickable">JASA</span> (101) <span class="clickable">2006</span> pp. .
+</div>
+<div class="entry-tags"><span class="keyword clickable">Non-parametric</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@article{teh2006hierarchical,
+  author={Yee Whye Teh and Michael I. Jordan and Matthew J. Beal and David M. Blei},
+  title={Hierarchical Dirichlet Processes},
+  journal={JASA},
+  year={2006},
+  url={http://dx.doi.org/10.1198/016214506000000302},
+  volume={101},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="toutanova2007bayesian"></a>
+    <div class="metadata">
+<span class="clickable">Kristina Toutanova</span>, <span class="clickable">Mark Johnson</span>.
+<a href="http://books.nips.cc/papers/files/nips20/NIPS2007_0964.pdf">A Bayesian LDA-based model for semi-supervised part-of-speech tagging</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">NLP</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{toutanova2007bayesian,
+  author={Kristina Toutanova and Mark Johnson},
+  title={A Bayesian LDA-based model for semi-supervised part-of-speech tagging},
+  booktitle={NIPS},
+  year={2007},
+  pages={1521-1528},
+  url={http://books.nips.cc/papers/files/nips20/NIPS2007_0964.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="wallach2006beyond"></a>
+    <div class="metadata">
+<span class="clickable">Hanna M. Wallach</span>.
+Topic modeling: beyond bag-of-words.
+<span class="clickable">ICML</span> (<span class="clickable">2006</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{wallach2006beyond,
+  author={Hanna M. Wallach},
+  title={Topic modeling: beyond bag-of-words},
+  booktitle={ICML},
+  year={2006},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="wallach2009evaluation"></a>
+    <div class="metadata">
+<span class="clickable">Hanna Wallach</span>, <span class="clickable">Iain Murray</span>, <span class="clickable">Ruslan Salakhutdinov</span>, <span class="clickable">David Mimno</span>.
+<a href="http://www.cs.umass.edu/%7Emimno/papers/wallach09evaluation.pdf">Evaluation Methods for Topic Models</a>.
+<span class="clickable">ICML</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Evaluation</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{wallach2009evaluation,
+  author={Hanna Wallach and Iain Murray and Ruslan Salakhutdinov and David Mimno},
+  title={Evaluation Methods for Topic Models},
+  booktitle={ICML},
+  year={2009},
+  url={http://www.cs.umass.edu/~mimno/papers/wallach09evaluation.pdf},
+}
+</pre>
+  <p class="note">Commonly used methods for estimating the probability 
+of held-out words may be unstable. This paper presents more accurate 
+methods.</p>
+</div>
+<div class="entry">
+<a name="wallach2009rethinking"></a>
+    <div class="metadata">
+<span class="clickable">Hanna Wallach</span>, <span class="clickable">David Mimno</span>, <span class="clickable">Andrew McCallum</span>.
+<a href="http://www.cs.umass.edu/%7Emimno/papers/NIPS2009_0929.pdf">Rethinking LDA: Why priors matter</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Theory</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{wallach2009rethinking,
+  author={Hanna Wallach and David Mimno and Andrew McCallum},
+  title={Rethinking LDA: Why priors matter},
+  booktitle={NIPS},
+  year={2009},
+  url={http://www.cs.umass.edu/~mimno/papers/NIPS2009_0929.pdf},
+}
+</pre>
+  <p class="note">The use of an asymmetric Dirichlet prior on 
+per-document topic distributions reduces sensitivity to very common 
+words (eg stopwords and near-stopwords) and makes topic assignments more
+ stable as the number of topics grows.</p>
+</div>
+<div class="entry">
+<a name="wang2009multiscale"></a>
+    <div class="metadata">
+<span class="clickable">Chang Wang</span>, <span class="clickable">Sridhar Mahadevan</span>.
+<a href="http://www.cs.umass.edu/%7Echwang/papers/IJCAI-2009-TD.pdf">Multiscale Analysis of Document Corpora Based on Diffusion Models</a>.
+<span class="clickable">IJCAI</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{wang2009multiscale,
+  author={Chang Wang and Sridhar Mahadevan},
+  title={Multiscale Analysis of Document Corpora Based on Diffusion Models},
+  booktitle={IJCAI},
+  year={2009},
+  url={http://www.cs.umass.edu/~chwang/papers/IJCAI-2009-TD.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="wang2011relation"></a>
+    <div class="metadata">
+<span class="clickable">Chang Wang</span>, <span class="clickable">James Fan</span>, <span class="clickable">Aditya Kalyanpur</span>, <span class="clickable">David Gondek</span>.
+<a href="http://www-all.cs.umass.edu/%7Echwang/EMNLP-2011.pdf">Relation Extraction with Relation Topics</a>.
+<span class="clickable">EMNLP</span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{wang2011relation,
+  author={Chang Wang and James Fan and Aditya Kalyanpur and David Gondek},
+  title={Relation Extraction with Relation Topics},
+  booktitle={EMNLP},
+  year={2011},
+  url={http://www-all.cs.umass.edu/~chwang/EMNLP-2011.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="wang2005group"></a>
+    <div class="metadata">
+<span class="clickable">Xuerui Wang</span>, <span class="clickable">Natasha Mohanty</span>, <span class="clickable">Andrew McCallum</span>.
+<a href="http://books.nips.cc/papers/files/nips18/NIPS2005_0819.pdf">Group and Topic Discovery from Relations and Their Attributes</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2005</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Networks</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{wang2005group,
+  author={Xuerui Wang and Natasha Mohanty and Andrew McCallum},
+  title={Group and Topic Discovery from Relations and Their Attributes},
+  booktitle={NIPS},
+  year={2005},
+  url={http://books.nips.cc/papers/files/nips18/NIPS2005_0819.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="wang2006topics"></a>
+    <div class="metadata">
+<span class="clickable">Xuerui Wang</span>, <span class="clickable">Andrew McCallum</span>.
+Topics Over Time: a non-Markov continuous-time model of topical trends.
+<span class="clickable">KDD</span> (<span class="clickable">2006</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Temporal</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{wang2006topics,
+  author={Xuerui Wang and Andrew McCallum},
+  title={Topics Over Time: a non-Markov continuous-time model of topical trends},
+  booktitle={KDD},
+  year={2006},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="wang2008continuous"></a>
+    <div class="metadata">
+<span class="clickable">Chong Wang</span>, <span class="clickable">David M. Blei</span>, <span class="clickable">David Heckerman</span>.
+<a href="http://uai2008.cs.helsinki.fi/UAI_camera_ready/wang.pdf">Continuous Time Dynamic Topic Models</a>.
+<span class="clickable">UAI</span> (<span class="clickable">2008</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Temporal</span></div>
+  <div class="show-hide">
+<span class="bibtex-button">[BibTeX]</span><span class="abstract-button">[Abstract]</span>
+</div>
+    <pre>@inproceedings{wang2008continuous,
+  author={Chong Wang and David M. Blei and David Heckerman},
+  title={Continuous Time Dynamic Topic Models},
+  booktitle={UAI},
+  year={2008},
+  url={http://uai2008.cs.helsinki.fi/UAI_camera_ready/wang.pdf},
+}
+</pre>
+  <p class="abstract">In this paper, we develop the continuous time 
+dynamic topic model (cDTM). The cDTM is a dynamic topic model that uses 
+Brownian motion to model the latent topics through a sequential 
+collection of documents, where a "topic" is a pattern of word use that 
+we expect to evolve over the course of the collection. We derive an 
+efficient variational approximate inference algorithm that takes 
+advantage of the sparsity of observations in text, a property that lets 
+us easily handle many time points. In contrast to the cDTM, the original
+ discrete-time dynamic topic model (dDTM) requires that time be 
+discretized. Moreover, the complexity of variational inference for the 
+dDTM grows quickly as time granularity increases, a drawback which 
+limits fine-grained discretization. We demonstrate the cDTM on two news 
+corpora, reporting both predictive perplexity and the novel task of time
+ stamp prediction.</p>
+</div>
+<div class="entry">
+<a name="wang2009simulataneous"></a>
+    <div class="metadata">
+<span class="clickable">Chong Wang</span>, <span class="clickable">David Blei</span>, <span class="clickable">Fei-Fei Li</span>.
+Simultaneous Image Classification and Annotation.
+<span class="clickable">CVPR</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Vision</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{wang2009simulataneous,
+  author={Chong Wang and David Blei and Fei-Fei Li},
+  title={Simultaneous Image Classification and Annotation},
+  booktitle={CVPR},
+  year={2009},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="wang2011gritty"></a>
+    <div class="metadata">
+<span class="clickable">Yi Wang</span>.
+<a href="http://dbgroup.cs.tsinghua.edu.cn/wangyi/lda/lda.pdf">Distributed Gibbs Sampling of Latent Dirichlet Allocation: The Gritty Details</a>. 
+(<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Where to start</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@misc{wang2011gritty,
+  author={Yi Wang},
+  title={Distributed Gibbs Sampling of Latent Dirichlet Allocation: The Gritty Details},
+  year={2011},
+  url={http://dbgroup.cs.tsinghua.edu.cn/wangyi/lda/lda.pdf},
+}
+</pre>
+  <p class="note">A thorough introduction for those wanting to understand the mathematical basics of topic models.</p>
+</div>
+<div class="entry">
+<a name="wei2006pachinko"></a>
+    <div class="metadata">
+<span class="clickable">Wei Li</span>, <span class="clickable">Andrew McCallum</span>.
+Pachinko allocation: DAG-structured mixture models of topic correlations.
+<span class="clickable">ICML</span> (<span class="clickable">2006</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{wei2006pachinko,
+  author={Wei Li and Andrew McCallum},
+  title={Pachinko allocation: DAG-structured mixture models of topic correlations},
+  booktitle={ICML},
+  year={2006},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="wei2006lda"></a>
+    <div class="metadata">
+<span class="clickable">Xing Wei</span>, <span class="clickable">Bruce Croft</span>.
+LDA-based document models for ad-hoc retrieval.
+<span class="clickable">SIGIR</span> (<span class="clickable">2006</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{wei2006lda,
+  author={Xing Wei and Bruce Croft},
+  title={LDA-based document models for ad-hoc retrieval},
+  booktitle={SIGIR},
+  year={2006},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="yan2009parallel"></a>
+    <div class="metadata">
+<span class="clickable">Feng Yan</span>, <span class="clickable">Ningyi Xu</span>, <span class="clickable">Yuan Qi</span>.
+<a href="http://books.nips.cc/papers/files/nips22/NIPS2009_0546.pdf">Parallel Inference for Latent Dirichlet Allocation on Graphics Processing Units</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{yan2009parallel,
+  author={Feng Yan and Ningyi Xu and Yuan Qi},
+  title={Parallel Inference for Latent Dirichlet Allocation on Graphics Processing Units},
+  booktitle={NIPS},
+  year={2009},
+  url={http://books.nips.cc/papers/files/nips22/NIPS2009_0546.pdf},
+}
+</pre>
+  <p class="note">In addition to dividing the corpus between processors,
+ this work divides the vocabulary into the same number of partitions, 
+such that each processor works on both its own documents and its own 
+words at each epoch. This increases the number of epochs, but 
+drastically reduces the possibility of incorrect samples.</p>
+</div>
+<div class="entry">
+<a name="yang2011bridging"></a>
+    <div class="metadata">
+<span class="clickable">Shuang-Hong Yang</span>, <span class="clickable">Steven P. Crain</span>, <span class="clickable">Hongyuan Zha</span>.
+<a href="http://jmlr.csail.mit.edu/proceedings/papers/v15/yang11b/yang11b.pdf">Bridging the language gap: topic adaptation for documents with different technicality</a>.
+<span class="clickable">AIStats</span> (<span class="clickable">2011</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{yang2011bridging,
+  author={Shuang-Hong Yang and Steven P. Crain and Hongyuan Zha},
+  title={Bridging the language gap: topic adaptation for documents with different technicality},
+  booktitle={AIStats},
+  year={2011},
+  url={http://jmlr.csail.mit.edu/proceedings/papers/v15/yang11b/yang11b.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="yao2009efficient"></a>
+    <div class="metadata">
+<span class="clickable">Limin Yao</span>, <span class="clickable">David Mimno</span>, <span class="clickable">Andrew McCallum</span>.
+<a href="http://www.cs.umass.edu/%7Emimno/papers/fast-topic-model.pdf">Efficient Methods for Topic Model Inference on Streaming Document Collections</a>.
+<span class="clickable">KDD</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Scalability</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{yao2009efficient,
+  author={Limin Yao and David Mimno and Andrew McCallum},
+  title={Efficient Methods for Topic Model Inference on Streaming Document Collections},
+  booktitle={KDD},
+  year={2009},
+  url={http://www.cs.umass.edu/~mimno/papers/fast-topic-model.pdf},
+}
+</pre>
+  <p class="note">Explores methods for inferring topic distributions for
+ new documents given a trained model. This paper includes the SparseLDA 
+algorithm and data structure, which can dramatically improve time and 
+memory performance in Gibbs sampling.</p>
+</div>
+<div class="entry">
+<a name="zhang2010evolutionary"></a>
+    <div class="metadata">
+<span class="clickable">Jianwen Zhang</span>, <span class="clickable">Yangqiu Song</span>, <span class="clickable">Changshui Zhang</span>, <span class="clickable">Shixia Liu</span>.
+<a href="http://research.microsoft.com/en-us/um/people/shliu/p1079-zhang.pdf">Evolutionary Hierarchical Dirichlet Processes for Multiple Correlated Time-varying Corpora</a>.
+<span class="clickable">KDD</span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags">
+<span class="keyword clickable">Non-parametric</span><span class="keyword clickable">Temporal</span>
+</div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{zhang2010evolutionary,
+  author={Jianwen Zhang and Yangqiu Song and Changshui Zhang and Shixia Liu},
+  title={Evolutionary Hierarchical Dirichlet Processes for Multiple Correlated Time-varying Corpora},
+  booktitle={KDD},
+  year={2010},
+  url={http://research.microsoft.com/en-us/um/people/shliu/p1079-zhang.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="zhao2006bitam"></a>
+    <div class="metadata">
+<span class="clickable">Bing Zhao</span>, <span class="clickable">Eric P. Xing</span>.
+<a href="http://www.aclweb.org/anthology/P/P06/P06-2124">BiTAM: Bilingual Topic AdMixture Models for Word Alignment</a>.
+<span class="clickable">ACL</span> (<span class="clickable">2006</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Cross-language</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{zhao2006bitam,
+  author={Bing Zhao and Eric P. Xing},
+  title={BiTAM: Bilingual Topic AdMixture Models for Word Alignment},
+  booktitle={ACL},
+  year={2006},
+  url={http://www.aclweb.org/anthology/P/P06/P06-2124},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="zhao2006hmbitam"></a>
+    <div class="metadata">
+<span class="clickable">Bin Zhao</span>, <span class="clickable">Eric P. Xing</span>.
+<a href="http://books.nips.cc/papers/files/nips20/NIPS2007_0188.pdf">HM-BiTAM: Bilingual Topic Exploration, Word Alignment, and Translation</a>.
+<span class="clickable">NIPS</span> (<span class="clickable">2007</span>).
+</div>
+<div class="entry-tags"><span class="keyword clickable">Cross-language</span></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{zhao2006hmbitam,
+  author={Bin Zhao and Eric P. Xing},
+  title={HM-BiTAM: Bilingual Topic Exploration, Word Alignment, and Translation},
+  booktitle={NIPS},
+  year={2007},
+  url={http://books.nips.cc/papers/files/nips20/NIPS2007_0188.pdf},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="zhu2009medlda"></a>
+    <div class="metadata">
+<span class="clickable">Jun Zhu</span>, <span class="clickable">Amr Ahmed</span>, <span class="clickable">Eric P. Xing</span>.
+MedLDA: Maximum Margin Supervised Topic Models for Regression and Classification.
+<span class="clickable">ICML</span> (<span class="clickable">2009</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{zhu2009medlda,
+  author={Jun Zhu and Amr Ahmed and Eric P. Xing},
+  title={MedLDA: Maximum Margin Supervised Topic Models for Regression and Classification},
+  booktitle={ICML},
+  year={2009},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="zhu2010conditional"></a>
+    <div class="metadata">
+<span class="clickable">Jun Zhu</span>, <span class="clickable">Eric P. Xing</span>.
+Conditional Topic Random Fields.
+<span class="clickable">ICML</span> (<span class="clickable">2010</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide"><span class="bibtex-button">[BibTeX]</span></div>
+    <pre>@inproceedings{zhu2010conditional,
+  author={Jun Zhu and Eric P. Xing},
+  title={Conditional Topic Random Fields},
+  booktitle={ICML},
+  year={2010},
+}
+</pre>
+  </div>
+<div class="entry">
+<a name="zhu2006taglda"></a>
+    <div class="metadata">
+<span class="clickable">Xiaojin Zhu</span>, <span class="clickable">David M. Blei</span>, <span class="clickable">John Lafferty</span>.
+TagLDA: Bringing document structure knowledge into topic models. 
+(<span class="clickable">2006</span>).
+</div>
+<div class="entry-tags"></div>
+  <div class="show-hide">
+<span class="bibtex-button">[BibTeX]</span><span class="abstract-button">[Abstract]</span>
+</div>
+    <pre>@techreport{zhu2006taglda,
+  author={Xiaojin Zhu and David M. Blei and John Lafferty},
+  title={TagLDA: Bringing document structure knowledge into topic models},
+  year={2006},
+  institution={University of Wisconsin, Madison},
+  number={TR-1553},
+}
+</pre>
+  <p class="abstract">Latent Dirichlet Allocation models a document by a
+ mixture of topics, where each topic itself is typically modeled by a 
+unigram word distribution. Documents however often have known 
+structures, and the same topic can exhibit different word distributions 
+under different parts of the structure. We extend latent Dirichlet 
+allocation model by replacing the unigram word distributions with a 
+factored representation conditioned on both the topic and the structure.
+ In the resultant model each topic is equivalent to a set of unigrams, 
+reflecting the structure a word is in. The proposed model is more 
+flexible in modeling the corpus. The factored representation prevents 
+combinatorial explosion and leads to efficient parameterization. We 
+derive the variational optimization algorithm for the new model. The 
+model shows improved perplexity on text and image data, but no 
+significant accuracy improvement when used for classification.</p>
+</div>
+</div>
+
+
+</body></html>
